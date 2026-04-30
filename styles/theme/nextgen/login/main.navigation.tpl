@@ -14,7 +14,7 @@
 		<div class="uk-container">
 		
 		<nav id="navbar" class="uk-navbar">
-			<div class="uk-navbar-left"><img class="logo" src="styles/resource/images/ultimatexnova.svg"/></div>
+			<div class="uk-navbar-left"><img class="logo" src="styles/resource/images/nullspace.svg"/></div>
 				<div class="uk-navbar-right">
 				<ul class="uk-navbar-nav">
 					<li class="menu-item">

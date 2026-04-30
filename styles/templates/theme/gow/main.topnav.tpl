@@ -90,7 +90,7 @@
     </div>
           <div class="d-flex col-2 align-items-center">
               <a href="game.php?page=overview">
-                <img class="img-fluid px-1" src="styles/resource/images/ultimatexnova.svg" width="400px"/>
+                <img class="img-fluid px-1" src="styles/resource/images/nullspace.svg" width="400px"/>
               </a>
           </div>
           <div style="height:80px;" class="d-flex flex-wrap col-5 justify-content-end align-items-start p-0">

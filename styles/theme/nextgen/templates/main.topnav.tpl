@@ -89,7 +89,7 @@
 <div class="dark-blur-bg menu-container box-shadow-large">
 	<div class="uk-container">
     <div class="uk-grid" uk-grid>
-      <div class="uk-width-1-1 uk-width-1-5@m uk-text-center"><a href="game.php?page=overview"><img class="logo" src="styles/resource/images/ultimatexnova.svg"/></a></div>
+      <div class="uk-width-1-1 uk-width-1-5@m uk-text-center"><a href="game.php?page=overview"><img class="logo" src="styles/resource/images/nullspace.svg"/></a></div>
       <div class="uk-width-1-1 uk-flex-middle uk-flex-center uk-width-4-5@m uk-child-width-1-2 uk-child-width-1-3@s uk-child-width-1-5@m uk-grid-small uk-grid-row-collapse uk-padding-top-remove uk-margin-remove-top " uk-grid>
         <!-- New Resource panel -->
        
