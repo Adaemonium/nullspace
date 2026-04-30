@@ -24,7 +24,7 @@ $(document).ready(function(){
 </script>
 
 <div id="leftmenu">
-	<div class="adm-logo"><img src="./styles/resource/images/nullspace.svg"></div>
+	<div class="adm-logo"><img src="./styles/resource/images/nullspace.svg" style="max-width:250px;height:auto;"></div>
 	<input class="bg-black text-white py-0 my-1 form-control" style="height:38px;width:100%;" id="searchInput" type="text"  placeholder="search...">
 	<ul class="bg-black d-flex flex-column p-0 m-0 adm-left-menu" id="menu">
 		{if allowedTo('ShowInformationPage')}
