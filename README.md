@@ -1,4 +1,4 @@
-<center><img src="styles/resource/images/ultimatexnova.svg" width="30%" style="margin: 0 auto;"><img src="styles/resource/images/nullspace.svg" width="30%" style="margin: 0 auto;"></center>
+<div align="center"><img src="styles/resource/images/ultimatexnova.svg" width="45%" style="display:inline-block; margin: 0 20px;"/><img src="styles/resource/images/nullspace.svg" width="45%" style="display:inline-block; margin: 0 20px;"/></div>
 
 # NULLSPACE, a private server operating ultimateXnova
 
