@@ -49,7 +49,7 @@
     {if isModuleAvailable($smarty.const.MODULE_ALLIANCE)}<li><a href="game.php?page=alliance"><i class="fas fa-handshake fas-red"></i> {$LNG.lm_alliance}</a></li>{/if}
     {if isModuleAvailable($smarty.const.MODULE_FORUM)}{if !empty($hasBoard)}<li><a href="game.php?page=board" target="forum"><i class="fas fa-newspaper fas-red"></i> {$LNG.lm_forums}</a></li>{/if}{/if}
    {if isModuleAvailable($smarty.const.MODULE_SEARCH)}<li><a href="game.php?page=search"><i class="fas fa-search fas-red"></i> {$LNG.lm_search}</a></li>{/if}
-     {if isModuleAvailable($smarty.const.MODULE_DISCORD)}<li><a href="{$discordUrl}" target="copy"> <i class="fab fa-discord fas-red"></i>Discord</a></li>{/if}
+     {if isModuleAvailable($smarty.const.MODULE_DISCORD)}<li><a href="{$discordUrl}" target="copy"> <i class="fab fa-discord fas-red"></i>Stoat</a></li>{/if}
     {if isModuleAvailable($smarty.const.MODULE_SUPPORT)}<li><a href="game.php?page=ticket"><i class="fas fa-life-ring fas-red"></i> {$LNG.lm_support}</a></li>{/if}
     <li><a href="game.php?page=questions"><i class="fas fa-question-circle fas-red"></i> {$LNG.lm_faq}</a></li>
     {if isModuleAvailable($smarty.const.MODULE_BANLIST)}<li><i class="fas fa-user-slash fas-red"></i> <a href="game.php?page=banList">{$LNG.lm_banned}</a></li>{/if}
