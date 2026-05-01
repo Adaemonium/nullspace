@@ -24,7 +24,7 @@
 		<tr>
 			<td colspan="2"><a href="https://github.com/ultimateXnova/ultimateXnova/" target="_blank">Project Homepage</a>
 				<a target="_blank" href="https://github.com/ultimateXnova/ultimateXnova/issues" target="_blank">GitHub Issues - <!--{$LNG.ow_forum}--></a>
-				<a target="_blank" href="https://discord.gg/TUzu8AWPKM" target="_blank">Discord</a>
+				<a target="_blank" href="https://discord.gg/TUzu8AWPKM" target="_blank">Stoat</a>
 				</td>
 		</tr>
 		<tr>
