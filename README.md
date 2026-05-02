@@ -31,7 +31,11 @@ ultimateXnova is an open-source browser-based space exploration and conquest gam
 ## Credits
 
 Pfahli (ultimateXnova) (repository this was forked from)
+
 koraykarakus (SteemNova)
+
 IntinteDAO (SteemNova)
+
 mys (SteemNova)
+
 Jan (2Moons)
