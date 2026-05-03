@@ -503,12 +503,17 @@ position: relative;
 
 /* ToolTip Notify */
 #tooltipNotify {
-    
+
     bottom: 1vh;
     z-index: 99999;
     top: auto;
     right: 1vw;
     left: auto !important;
+}
+
+/* Bootstrap Tooltip */
+.tooltip {
+  z-index: 10000;
 }
 
 /* Buttons */
