@@ -112,7 +112,7 @@
           <tbody class="fs-12">
             <tr>
               <td ><span style="color:skyblue">{$LNG.ov_diameter}:</span> </td>
-              <td class="text-center">{$LNG.ov_distance_unit} (<a title="{$LNG.ov_developed_fields}">{$planet_field_current}</a> / <a title="{$LNG.ov_max_developed_fields}">{$planet_field_max}</a> {$LNG.ov_fields})</td>
+              <td class="text-center">{$planet_diameter} {$LNG.ov_distance_unit} (<a title="{$LNG.ov_developed_fields}">{$planet_field_current}</a> / <a title="{$LNG.ov_max_developed_fields}">{$planet_field_max}</a> {$LNG.ov_fields})</td>
             </tr>
             <tr>
               <td ><span style="color:skyblue">{$LNG.ov_temperature}:</span></td>
