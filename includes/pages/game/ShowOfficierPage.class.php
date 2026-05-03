@@ -146,6 +146,7 @@ class ShowOfficierPage extends AbstractGamePage
 					'buyable'			=> $buyable,
 					'costOverflow'		=> $costOverflow,
 					'elementBonus'		=> $elementBonus,
+					'time'				=> $pricelist[$Element]['time'],
 				);
 			}
 		}
