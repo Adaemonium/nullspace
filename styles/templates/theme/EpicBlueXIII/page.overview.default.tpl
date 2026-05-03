@@ -127,7 +127,7 @@ $("#tn3").hide();
     <table>
       <tr>
         <td><span style="color:skyblue">{$LNG.ov_diameter}:</span> </td>
-        <td>{$LNG.ov_distance_unit} (<a title="{$LNG.ov_developed_fields}">{$planet_field_current}</a> / <a title="{$LNG.ov_max_developed_fields}">{$planet_field_max}</a> {$LNG.ov_fields})</td>
+        <td>{$planet_diameter} {$LNG.ov_distance_unit} (<a title="{$LNG.ov_developed_fields}">{$planet_field_current}</a> / <a title="{$LNG.ov_max_developed_fields}">{$planet_field_max}</a> {$LNG.ov_fields})</td>
       </tr>
       <tr>
         <td><span style="color:skyblue">{$LNG.ov_temperature}:</span></td>
