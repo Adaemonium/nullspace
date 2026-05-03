@@ -116,8 +116,6 @@ class ShowOfficierPage extends AbstractGamePage
 				$costOverflow		= BuildFunctions::getRestPrice($USER, $PLANET, $Element, $costResources);
 				$elementBonus		= BuildFunctions::getAvalibleBonus($Element);
 
-				error_log("Element: " . $Element . " time: " . $pricelist[$Element]['time']);
-
 				$darkmatterList[$Element]	= array(
 					'timeLeft'			=> max($USER[$resource[$Element]] - TIMESTAMP, 0),
 					'costResources'		=> $costResources,

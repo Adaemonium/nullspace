@@ -6,7 +6,6 @@
 		<th colspan="2">{$of_dm_trade}</th>
 	</tr>
 	{foreach $darkmatterList as $ID => $Element}
-	DEBUG TIME: {$Element.time}
 	<tr>
 		<td rowspan="2" style="width:120px;">
 			<a href="#" onclick="return Dialog.info({$ID});">
