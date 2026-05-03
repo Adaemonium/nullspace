@@ -2,25 +2,33 @@
 
 # NULLSPACE, a private server operating ultimateXnova
 
-Busy working with le bugs, will update introduction when time.
+NULLSPACE is a closed private server which will potentially involve the development of bugfixes and further QoL additions in the relatively outdated and neglected ultimateXnova (Pfahli) repository.
+
+Requests to playtest this Work-In-Progress server are welcome by emailing admin.nullspace@proton.me. A secure https domain protocol will then be established and provided. 
 
 ## GRATIFYINGLY FIXED BY OVERWORKED MECHANICS AND SCHOLARS
 
 - The search page is now operational in the nextgen theme.
-- EN/INGAME English native translation.
-
-## TO UNDERGO REPAIRS OR BE REVIEWED BY INFURIATING BUREAUCRATS
-
-1. Lack of planet 'in km' specification on Overview. (nextgen)
-2. Universe info tooltip stuck behind bar. (nextgen)
-3. Administrator does not remain protected permanently if toggled. Possible admin tag instead of [N]?
-4. Linking (to homepage/login) is still ultimatexnova (made changes to keywords but no change, review)
-5. Italiano (and maybe other languages) is a hot mess of syntax errors owing to the language employing ' a lot.
-6. Ascertain if news is operating normally, and where it appears.
+- EN/INGAME English native translation. (EN)
+- Planet 'in km' now has a displayed (non-blank) value in page=overview in all themes.
+- Universe info tooltip is no longer stuck behind bottom bar. (nextgen only)
+- Officer duration is no longer stuck at "00:00:00" in all themes.
 
 ## HIGH PRIORITY, i.e. MAJOR BREAKAGES/HULL BREACHES
 
-1. Clicking on user in galaxy view results in tooltip which remains permanent
+1. Prefilled coordinate fields do not trigger trip details.
+2. Blank cargo capacity due to unfilled resources fields.
+3. Clicking on user in galaxy view results in tooltip which remains permanent even after clicking on links.
+
+## TO UNDERGO REPAIRS OR BE REVIEWED BY INFURIATING BUREAUCRATS
+
+1. Administrator does not remain protected permanently if toggled. Possible admin tag instead of [N]? Also bot tags?
+2. Linking (to homepage/login) is still ultimatexnova (made changes to keywords but no change, review)
+3. Italiano (and maybe other languages) is a hot mess of syntax errors owing to the language employing ' a lot, and these not being excepted using "".
+4. Ascertain if news is operating normally, and where it appears.
+5. Examine additional universes setup.
+6. Inspect broken/missing functions in administration (adm).
+7. Consider QoL additions to Empire screen, i.e. surplus/deficit of cargo space and total cargo space.
 
 <center><img src="styles/resource/images/ultimatexnova.svg" width="50%" style="margin: 0 auto;"></center>
 
