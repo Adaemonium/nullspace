@@ -76,7 +76,7 @@
 		<div style="z-index:9999;" class="dark-blur-bg footer-container box-shadow-large">
 			{if isModuleAvailable($smarty.const.MODULE_SERVER_INFO)}
 			<span class="font-size-12 px-2 border-end hover-underline text-white hover-pointer" data-bs-toggle="tooltip"
-			data-bs-placement="left"
+			data-bs-placement="top"
 			data-bs-html="true"
 			title="
 			<table class='table-tooltip bg-black'>
