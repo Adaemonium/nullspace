@@ -178,5 +178,10 @@
 data			= {$fleetdata|json};
 shortCutRows	= {$themeSettings.SHORTCUT_ROWS_ON_FLEET1};
 fl_no_shortcuts	= '{$LNG.fl_no_shortcuts}';
+$(document).ready(function() {
+	if ($('#galaxy').val() && $('#system').val() && $('#planet').val()) {
+		updateVars();
+	}
+});
 </script>
 {/block}
