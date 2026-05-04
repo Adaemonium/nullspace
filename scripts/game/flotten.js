@@ -74,7 +74,6 @@ function refreshFormData() {
 
 function setACSTarget(galaxy, solarsystem, planet, type, tacs) {
 	setTarget(galaxy, solarsystem, planet, type);
-	updateVars();
 	document.getElementsByName("fleet_group")[0].value = tacs;
 }
 
@@ -83,6 +82,7 @@ function setTarget(galaxy, solarsystem, planet, type) {
 	document.getElementsByName("system")[0].value = solarsystem;
 	document.getElementsByName("planet")[0].value = planet;
 	document.getElementsByName("type")[0].value = type;
+	updateVars();
 }
 
 function FleetTime(){
