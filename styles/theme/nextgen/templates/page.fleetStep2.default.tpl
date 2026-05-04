@@ -123,5 +123,8 @@
 </form>
 <script type="text/javascript">
 data	= {$fleetdata|json};
+$(document).ready(function() {
+	calculateTransportCapacity();
+});
 </script>
 {/block}
