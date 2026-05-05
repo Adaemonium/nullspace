@@ -307,7 +307,7 @@
 				$LogArray[]	= array(
 					'Element'	=> $Element,
 					'old'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $val) : (is_numeric($val) ? pretty_number($val) : $val)),
-					'new'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $conf_after[$key]) : (is_numeric($conf_after[$key]) ? pretty_number($conf_after[$key]) : $conf_after[$key])),
+					'new'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $conf_after[$key] ?? '') : (is_numeric($conf_after[$key] ?? '') ? pretty_number($conf_after[$key] ?? '') : $conf_after[$key] ?? '')),
 				);
 			}
 		}
@@ -474,7 +474,7 @@ function ShowLogDetail() {
 			$LogArray[]	= array(
 				'Element'	=> $Element,
 				'old'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $val) : (is_numeric($val) ? pretty_number($val) : $val)),
-				'new'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $conf_after[$key]) : (is_numeric($conf_after[$key]) ? pretty_number($conf_after[$key]) : $conf_after[$key])),
+				'new'		=> ($Element == 'urlaubs_until' ? _date($LNG['php_tdformat'], $conf_after[$key] ?? '') : (is_numeric($conf_after[$key] ?? '') ? pretty_number($conf_after[$key] ?? '') : $conf_after[$key] ?? '')),
 			);
 		}
 	}
