@@ -151,7 +151,7 @@ class ShowMessageListPage extends AbstractAdminPage
 			'receiver'		=> $receiver,
 		));
 
-		$this->display('MessageList.tpl');
+		$this->display('page.messagelist.default.tpl');
 
 	}
 
