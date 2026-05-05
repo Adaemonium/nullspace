@@ -70,11 +70,11 @@ class ShowMessageListPage extends AbstractAdminPage
 
 		if(!empty($sender))
 		{
-			$userWhereSQL = ' AND us.username = '.Database::get()->escapeValue($sender);
+			$userWhereSQL = ' AND us.username = '.Database::get()->quote($sender);
 		}
 		elseif(!empty($receiver))
 		{
-			$userWhereSQL = ' AND u.username = '.Database::get()->escapeValue($receiver);
+			$userWhereSQL = ' AND u.username = '.Database::get()->quote($receiver);
 		}
 
 		if ($type != 100)
