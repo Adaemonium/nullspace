@@ -55,7 +55,27 @@ class ShowMessageListPage extends AbstractAdminPage
 		$useDateStart	= count($dateStart) == 3;
 		$useDateEnd		= count($dateEnd) == 3;
 
+		if($useDateStart && $useDateEnd)
+		{
+			$dateWhereSQL = ' AND message_time BETWEEN '.mktime(0, 0, 0, (int) $dateStart['month'], (int) $dateStart['day'], (int) $dateStart['year']).' AND '.mktime(23, 59, 59, (int) $dateEnd['month'], (int) $dateEnd['day'], (int) $dateEnd['year']);
+		}
+		elseif($useDateStart)
+		{
+			$dateWhereSQL = ' AND message_time > '.mktime(0, 0, 0, (int) $dateStart['month'], (int) $dateStart['day'], (int) $dateStart['year']);
+		}
+		elseif($useDateEnd)
+		{
+			$dateWhereSQL = ' AND message_time < '.mktime(23, 59, 59, (int) $dateEnd['month'], (int) $dateEnd['day'], (int) $dateEnd['year']);
+		}
 
+		if(!empty($sender))
+		{
+			$userWhereSQL = ' AND us.username = '.Database::get()->escapeValue($sender);
+		}
+		elseif(!empty($receiver))
+		{
+			$userWhereSQL = ' AND u.username = '.Database::get()->escapeValue($receiver);
+		}
 
 		if ($type != 100)
 		{
