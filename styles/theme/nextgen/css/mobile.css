@@ -12,5 +12,7 @@
     .planets-container {
       padding-bottom: 90px !important;
     }
-
+    .footer-container {
+      position: relative;
+    }
   }
