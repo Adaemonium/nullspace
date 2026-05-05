@@ -396,7 +396,7 @@ a:hover .planet-box {
 
 }
 .planet-box:hover {
-    transform: scale(2);
+    transform: scale(1.2);
     z-index: 9999;
     opacity: 1;
 }
