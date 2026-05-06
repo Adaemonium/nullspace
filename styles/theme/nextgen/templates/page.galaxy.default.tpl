@@ -370,7 +370,7 @@
 				title="{$LNG.gl_spy}" onclick="doit(6,{$currentPlanet.planet.id},{$spyShips|json|escape:'html'})">
 					<img style="width:18px;height:18px;" src="{$dpath}img/e.gif" alt="">
 				</a>{/if}
-			{if $currentPlanet.action.message}
+				{if $currentPlanet.action.message}
 				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
@@ -378,11 +378,11 @@
 					<img style="width:18px;height:18px;" src="{$dpath}img/m.gif" title="{$LNG.write_message}" alt="">
 				</a>{/if}
 				{if $currentPlanet.action.buddy}
-        <a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
+				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
 				title="{$LNG.gl_buddy_request}" onclick="return Dialog.Buddy({$currentPlanet.user.id})">
-					<img width="18" height="18" src="{$dpath}img/b.gif" title="{$LNG.gl_buddy_request}" alt="">
+					<img style="width:18px;height:18px;" src="{$dpath}img/b.gif" title="{$LNG.gl_buddy_request}" alt="">
 				</a>
 				{/if}
 				{if $currentPlanet.action.missle}
@@ -390,17 +390,16 @@
 				data-bs-placement="top"
 				data-bs-html="true"
 				title="{$LNG.gl_missile_attack}" class='hover-pointer text-decoration-none' href="?page=galaxy&amp;action=sendMissle&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;type=1">
-					<img width="18" height="18" src="{$dpath}img/r.gif" title="{$LNG.gl_missile_attack}" alt="">
+					<img style="width:18px;height:18px;" src="{$dpath}img/r.gif" title="{$LNG.gl_missile_attack}" alt="">
 				</a>
 				{/if}
-
 			{/if}
 			{if $currentPlanet.planet.phalanx}
 			<a data-bs-toggle="tooltip"
 			data-bs-placement="top"
 			data-bs-html="true"
 			title="{$LNG.gl_phalanx}" class='hover-pointer text-decoration-none' onclick="OpenPopup('?page=phalanx&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;planettype=1','',640,510);return false;">
-				<img width="18" height="18" src="{$dpath}img/r.gif" title="{$LNG.gl_phalanx}" alt="">
+				<img style="width:18px;height:18px;" src="{$dpath}img/r.gif" title="{$LNG.gl_phalanx}" alt="">
 			</a>
 			{/if}
 		</td>
