@@ -63,7 +63,7 @@
 		<th>{$LNG.gl_debris}</th>
 		<th>{$LNG.gl_player_estate}</th>
 		<th>{$LNG.gl_alliance}</th>
-		<th>{$LNG.gl_actions}</th>
+		<th style="min-width:70px">{$LNG.gl_actions}</th>
 	</tr>
     {for $planet=1 to $max_planets}
 	<tr>
