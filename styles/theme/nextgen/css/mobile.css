@@ -25,4 +25,7 @@
     .footer-container {
       position: relative;
     }
+    .galaxy-nav-input {
+      width: 50px !important;
+    }
   }
