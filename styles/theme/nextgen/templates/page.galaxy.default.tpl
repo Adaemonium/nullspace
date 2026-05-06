@@ -43,6 +43,7 @@
 			</tr>
 		</tbody>
 	</table>
+	</div>
 	</form>
 	{if $action == 'sendMissle'}
     <form action="?page=fleetMissile" method="post">
