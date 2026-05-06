@@ -63,7 +63,7 @@
 		<th>{$LNG.gl_debris}</th>
 		<th>{$LNG.gl_player_estate}</th>
 		<th>{$LNG.gl_alliance}</th>
-		<th style="min-width:60px">{$LNG.gl_actions}</th>
+		<th>{$LNG.gl_actions}</th>
 	</tr>
     {for $planet=1 to $max_planets}
 	<tr>
@@ -361,7 +361,7 @@
 			</a>
 			{else}-{/if}
 		</td>
-		<td class="text-center align-middle" style="white-space: nowrap;">
+		<td class="text-center align-middle" style="white-space: nowrap; min-width: 60px;">
 			{if $currentPlanet.action}
 				{if $currentPlanet.action.esp}
 				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
