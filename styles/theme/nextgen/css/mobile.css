@@ -32,4 +32,11 @@
     .footer-container {
       position: relative;
     }
+    #galaxy_form input[type="text"] {
+    width: 100% !important;
+    color: white !important;
+    }
+    #galaxy_form table {
+    width: 100% !important;
+    }
   }
