@@ -364,21 +364,21 @@
 		<td class="text-center align-middle" style="white-space: nowrap;">
 			{if $currentPlanet.action}
 				{if $currentPlanet.action.esp}
-				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
+				<a class='hover-pointer text-decoration-none' style="display:inline-block;line-height:0;padding:0;" data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
 				title="{$LNG.gl_spy}" onclick="doit(6,{$currentPlanet.planet.id},{$spyShips|json|escape:'html'})">
 					<img style="width:18px;height:18px;" src="{$dpath}img/e.gif" alt="">
 				</a>{/if}
 				{if $currentPlanet.action.message}
-				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
+				<a class='hover-pointer text-decoration-none' style="display:inline-block;line-height:0;padding:0;" data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
 				title="{$LNG.write_message}" onclick="return Dialog.PM({$currentPlanet.user.id})">
 					<img style="width:18px;height:18px;" src="{$dpath}img/m.gif" title="{$LNG.write_message}" alt="">
 				</a>{/if}
 				{if $currentPlanet.action.buddy}
-				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
+				<a class='hover-pointer text-decoration-none' style="display:inline-block;line-height:0;padding:0;" data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
 				title="{$LNG.gl_buddy_request}" onclick="return Dialog.Buddy({$currentPlanet.user.id})">
