@@ -25,7 +25,7 @@
 					<input class="btn bg-dark m-0 text-yellow text-center fs-12 fw-bold" type="button" name="galaxyLeft" value="&lt;" onclick="galaxy_submit('galaxyLeft')">
 				</td>
 				<td class="text-center">
-					<input class="text-center form-control bg-dark text-white border-0" type="text" name="galaxy" value="{$galaxy}" size="5" maxlength="3" tabindex="1">
+					<input class="text-center form-control bg-dark text-white border-0" type="text" name="galaxy" value="{$galaxy}" maxlength="3" tabindex="1">
 				</td>
 				<td class="text-center">
 					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="galaxyRight" value="&gt;" onclick="galaxy_submit('galaxyRight')">
@@ -34,7 +34,7 @@
 					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemLeft" value="&lt;" onclick="galaxy_submit('systemLeft')">
 				</td>
 				<td class="text-center">
-					<input class="text-center form-control bg-dark text-white border-0" type="text" name="system" value="{$system}" size="5" maxlength="3" tabindex="2">
+					<input class="text-center form-control bg-dark text-white border-0" type="text" name="system" value="{$system}" maxlength="3" tabindex="2">
 				</td>
 				<td class="text-center">
 					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemRight" value="&gt;" onclick="galaxy_submit('systemRight')">
