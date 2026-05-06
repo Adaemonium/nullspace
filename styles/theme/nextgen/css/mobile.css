@@ -12,28 +12,13 @@
     .planets-container {
       padding-bottom: 30px !important;
     }
-    .center-content-box .box-border {
-      overflow-x: auto !important;
-      max-width: 100% !important;
-    }
     .center-content-box {
-      min-width: 0 !important;
-      width: 100% !important;
-      max-width: 100% !important;
-    }
-    .uk-grid {
-      margin-left: 0 !important;
-    }
-    .uk-grid > * {
-      padding-left: 0 !important;
+      overflow-x: auto !important;
     }
     .center-content-box table {
       font-size: 11px !important;
     }
     .footer-container {
       position: relative;
-    }
-    .galaxy-nav-input {
-      width: 50px !important;
     }
   }
