@@ -167,7 +167,7 @@
 				<img class="hover-border-yellow" src="{$dpath}planeten/{$currentPlanet.planet.image}.jpg" height="30" width="30" alt="">
 			</a>
 		</td>
-		<td class="text-center align-middle" style="white-space: nowrap; overflow: hidden;">{$currentPlanet.planet.name} {$currentPlanet.lastActivity}</td>
+		<td class="text-center align-middle" style="white-space: nowrap;">{$currentPlanet.planet.name} {$currentPlanet.lastActivity}</td>
 		<td class="text-center align-middle" style="white-space: nowrap;">
 			{if $currentPlanet.moon}
 			<a onclick="closePopovers();" class="hover-pointer" data-bs-toggle="popover"
