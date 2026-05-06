@@ -17,7 +17,8 @@
       min-width: 0 !important;
     }
     .center-content-box .box-border {
-      max-width: 100% !important;
+    overflow-x: auto !important;
+    max-width: 100% !important;
     }
     .center-content-box table {
       font-size: 11px !important;
