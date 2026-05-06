@@ -20,6 +20,7 @@
       min-width: 0 !important;
       width: 100% !important;
       max-width: 100% !important;
+      flex: 0 0 100% !important;
     }
     .center-content-box table {
       font-size: 11px !important;
