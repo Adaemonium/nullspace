@@ -51,7 +51,7 @@
 	</form>
     {/if}
     <div class="table-responsive">
-	<table class="table table-sm table-gow fs-12">
+	<table class="table table-sm table-gow fs-12" style="min-width: 500px;">
     <tr>
 			<th class="text-center" colspan="8">{$LNG.gl_solar_system} {$galaxy}:{$system}</th>
 		</tr>
@@ -361,7 +361,7 @@
 			</a>
 			{else}-{/if}
 		</td>
-		<td class="text-center align-middle" style="white-space: nowrap; min-width: 60px;">
+		<td class="text-center align-middle" style="white-space: nowrap;">
 			{if $currentPlanet.action}
 				{if $currentPlanet.action.esp}
 				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
