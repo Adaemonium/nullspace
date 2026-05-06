@@ -13,7 +13,7 @@
 	<form action="?page=galaxy" method="post" id="galaxy_form">
 	<input type="hidden" id="auto" value="dr">
 	<div class="d-flex flex-wrap align-items-center justify-content-center gap-1 my-1">
-		<div class="d-flex align-items-center gap-1 me-5">
+		<div class="d-flex align-items-center gap-1 me-6">
 			<span class="text-white fw-bold">{$LNG.gl_galaxy}</span>
 			<input class="btn bg-dark m-0 text-yellow text-center fs-12 fw-bold" type="button" name="galaxyLeft" value="&lt;" onclick="galaxy_submit('galaxyLeft')">
 			<input class="text-center bg-dark text-white border-0" type="text" name="galaxy" value="{$galaxy}" maxlength="3" tabindex="1" style="width:40px">
