@@ -10,7 +10,13 @@
       margin: 0 auto !important;
     }
     .planets-container {
-      padding-bottom: 90px !important;
+      padding-bottom: 30px !important;
+    }
+    .uk-container, .container, .box-border {
+      overflow-x: auto !important;
+    }
+    .center-content-box table {
+      font-size: 11px !important;
     }
     .footer-container {
       position: relative;
