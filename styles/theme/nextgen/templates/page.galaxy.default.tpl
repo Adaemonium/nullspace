@@ -63,7 +63,7 @@
 		<th>{$LNG.gl_debris}</th>
 		<th>{$LNG.gl_player_estate}</th>
 		<th>{$LNG.gl_alliance}</th>
-		<th style="min-width:80px">{$LNG.gl_actions}</th>
+		<th style="min-width:110px">{$LNG.gl_actions}</th>
 	</tr>
     {for $planet=1 to $max_planets}
 	<tr>
@@ -77,7 +77,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td style="min-width:80px"></td>
+        <td style="min-width:110px"></td>
     {elseif $GalaxyRows[$planet] === false}
 		<td class="text-center align-middle">
 			{$planet}
@@ -88,7 +88,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td style="min-width:80px"></td>
+        <td style="min-width:110px"></td>
     {else}
 		<td class="text-center align-middle">
 			{$planet}
