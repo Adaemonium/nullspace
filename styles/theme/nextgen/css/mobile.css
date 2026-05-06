@@ -12,8 +12,12 @@
     .planets-container {
       padding-bottom: 30px !important;
     }
-    .center-content-box {
+    .center-content-box .box-border {
       overflow-x: auto !important;
+      max-width: 100% !important;
+    }
+    .center-content-box {
+      min-width: 0 !important;
     }
     .center-content-box table {
       font-size: 11px !important;
