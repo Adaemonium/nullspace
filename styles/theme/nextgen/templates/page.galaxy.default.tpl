@@ -2,16 +2,14 @@
 {block name="content"}
 
 <script type="text/javascript">
-	function closePopovers(){
-			$('.popover').not(this).popover('hide');
-	}
-	function closePopover(){
+	 	function closePopover(){
 		$('.popover').removeClass('show');
 	}
 </script>
 
 	<form action="?page=galaxy" method="post" id="galaxy_form">
 	<input type="hidden" id="auto" value="dr">
+	<div class="table-responsive">
 	<table class="table table-gow table-sm fs-12 my-1">
 		<thead>
 			<tr class="border-3 border-orange">
