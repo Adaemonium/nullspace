@@ -376,6 +376,7 @@
 				data-bs-html="true"
 				title="{$LNG.write_message}" onclick="return Dialog.PM({$currentPlanet.user.id})">
 					<img style="width:18px;height:18px;" src="{$dpath}img/m.gif" title="{$LNG.write_message}" alt="">
+				</a>{/if}
 				{if $currentPlanet.action.buddy}
         <a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
 				data-bs-placement="top"
