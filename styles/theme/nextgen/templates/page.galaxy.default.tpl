@@ -63,12 +63,12 @@
 		<th>{$LNG.gl_debris}</th>
 		<th>{$LNG.gl_player_estate}</th>
 		<th>{$LNG.gl_alliance}</th>
-		<th style="min-width:70px">{$LNG.gl_actions}</th>
+		<th style="min-width:80px">{$LNG.gl_actions}</th>
 	</tr>
     {for $planet=1 to $max_planets}
 	<tr>
     {if !isset($GalaxyRows[$planet])}
-		<td class="text-center align-middle">
+		<td class="text-center align-middle" style="white-space: nowrap;">
 			<a href="?page=fleetTable&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;planettype=1&amp;target_mission=7">{$planet}</a>
 		</td>
         <td></td>
@@ -77,7 +77,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td style="min-width:80px"></td>
     {elseif $GalaxyRows[$planet] === false}
 		<td class="text-center align-middle">
 			{$planet}
@@ -88,7 +88,7 @@
         <td></td>
         <td></td>
         <td></td>
-        <td></td>
+        <td style="min-width:80px"></td>
     {else}
 		<td class="text-center align-middle">
 			{$planet}
