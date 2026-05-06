@@ -367,10 +367,10 @@
 				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
-				title="{$LNG.gl_spy}" class='hover-underline my-1 hover-pointer' onclick="doit(6,{$currentPlanet.planet.id},{$spyShips|json|escape:'html'})">
-					<img width="18" height="18" src="{$dpath}img/e.gif" alt="">
+				title="{$LNG.gl_spy}" onclick="doit(6,{$currentPlanet.planet.id},{$spyShips|json|escape:'html'})">
+					<img style="width:18px;height:18px;" src="{$dpath}img/e.gif" alt="">
 				</a>{/if}
-				{if $currentPlanet.action.message}
+			{if $currentPlanet.action.message}
 				<a class='hover-pointer text-decoration-none' data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
