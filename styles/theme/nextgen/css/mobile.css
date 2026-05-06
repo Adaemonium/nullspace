@@ -12,7 +12,7 @@
     .planets-container {
       padding-bottom: 30px !important;
     }
-    .uk-container, .container, .box-border {
+    .center-content-box {
       overflow-x: auto !important;
     }
     .center-content-box table {
