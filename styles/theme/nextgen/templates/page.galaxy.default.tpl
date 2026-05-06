@@ -13,8 +13,9 @@
 	<table class="table table-gow table-sm fs-12 my-1">
 		<thead>
 			<tr class="border-3 border-orange">
-				<th class="text-center" colspan="4">{$LNG.gl_galaxy}</th>
-				<th class="text-center" colspan="4">{$LNG.gl_solar_system}</th>
+				<th class="text-center" colspan="3">{$LNG.gl_galaxy}</th>
+				<th class="text-center" colspan="3">{$LNG.gl_solar_system}</th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody>
