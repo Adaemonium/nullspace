@@ -14,6 +14,7 @@
     }
     .center-content-box {
       overflow-x: auto !important;
+      min-width: 0 !important;
     }
     .center-content-box table {
       font-size: 11px !important;
