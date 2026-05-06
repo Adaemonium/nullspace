@@ -21,8 +21,11 @@
       width: 100% !important;
       max-width: 100% !important;
     }
-    .uk-margin.uk-grid {
-      flex-direction: column !important;
+    .uk-grid {
+      margin-left: 0 !important;
+    }
+    .uk-grid > * {
+      padding-left: 0 !important;
     }
     .center-content-box table {
       font-size: 11px !important;
