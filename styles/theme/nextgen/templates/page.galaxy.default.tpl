@@ -50,6 +50,7 @@
 		</table>
 	</form>
     {/if}
+    <div class="table-responsive">
 	<table class="table table-sm table-gow fs-12">
     <tr>
 			<th class="text-center" colspan="8">{$LNG.gl_solar_system} {$galaxy}:{$system}</th>
@@ -62,7 +63,7 @@
 		<th>{$LNG.gl_debris}</th>
 		<th>{$LNG.gl_player_estate}</th>
 		<th>{$LNG.gl_alliance}</th>
-		<th style="min-width:60px">{$LNG.gl_actions}</th>
+		<th>{$LNG.gl_actions}</th>
 	</tr>
     {for $planet=1 to $max_planets}
 	<tr>
@@ -440,6 +441,7 @@
 		<th class="text-center" colspan="8">{$LNG.cff_fleet_target}</th>
 	</tr>
 	</table>
+	</div>
 	<script type="text/javascript">
 		status_ok		= '{$LNG.gl_ajax_status_ok}';
 		status_fail		= '{$LNG.gl_ajax_status_fail}';
