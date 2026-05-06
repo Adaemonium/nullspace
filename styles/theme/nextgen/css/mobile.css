@@ -20,6 +20,9 @@
     overflow-x: auto !important;
     max-width: 100% !important;
     }
+    #galaxy_form .d-flex {
+    justify-content: flex-start !important;
+    }
     .center-content-box table {
       font-size: 11px !important;
     }
