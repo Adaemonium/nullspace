@@ -389,7 +389,7 @@
 				<a data-bs-toggle="tooltip"
 				data-bs-placement="top"
 				data-bs-html="true"
-				title="{$LNG.gl_missile_attack}" class='hover-pointer text-decoration-none' href="?page=galaxy&amp;action=sendMissle&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;type=1">
+				title="{$LNG.gl_missile_attack}" style="display:inline-block;line-height:0;padding:0;" class='hover-pointer text-decoration-none' href="?page=galaxy&amp;action=sendMissle&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;type=1">
 					<img style="width:18px;height:18px;" src="{$dpath}img/r.gif" title="{$LNG.gl_missile_attack}" alt="">
 				</a>
 				{/if}
@@ -398,7 +398,7 @@
 			<a data-bs-toggle="tooltip"
 			data-bs-placement="top"
 			data-bs-html="true"
-			title="{$LNG.gl_phalanx}" class='hover-pointer text-decoration-none' onclick="OpenPopup('?page=phalanx&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;planettype=1','',640,510);return false;">
+			title="{$LNG.gl_phalanx}" style="display:inline-block;line-height:0;padding:0;" class='hover-pointer text-decoration-none' onclick="OpenPopup('?page=phalanx&amp;galaxy={$galaxy}&amp;system={$system}&amp;planet={$planet}&amp;planettype=1','',640,510);return false;">
 				<img style="width:18px;height:18px;" src="{$dpath}img/r.gif" title="{$LNG.gl_phalanx}" alt="">
 			</a>
 			{/if}
