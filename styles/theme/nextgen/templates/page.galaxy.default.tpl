@@ -2,48 +2,26 @@
 {block name="content"}
 
 <script type="text/javascript">
-	 	function closePopover(){
+	function closePopovers(){
+			$('.popover').not(this).popover('hide');
+	}
+	function closePopover(){
 		$('.popover').removeClass('show');
 	}
 </script>
 
 	<form action="?page=galaxy" method="post" id="galaxy_form">
 	<input type="hidden" id="auto" value="dr">
-	<div class="table-responsive">
-	<table class="table table-gow table-sm fs-12 my-1">
-		<thead>
-			<tr class="border-3 border-orange">
-				<th class="text-center" colspan="3">{$LNG.gl_galaxy}</th>
-				<th class="text-center" colspan="3">{$LNG.gl_solar_system}</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td class="text-center">
-					<input class="btn bg-dark m-0 text-yellow text-center fs-12 fw-bold" type="button" name="galaxyLeft" value="&lt;" onclick="galaxy_submit('galaxyLeft')">
-				</td>
-				<td class="text-center">
-					<input class="text-center form-control bg-dark text-white border-0" type="text" name="galaxy" value="{$galaxy}" maxlength="3" tabindex="1">
-				</td>
-				<td class="text-center">
-					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="galaxyRight" value="&gt;" onclick="galaxy_submit('galaxyRight')">
-				</td>
-				<td class="text-center">
-					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemLeft" value="&lt;" onclick="galaxy_submit('systemLeft')">
-				</td>
-				<td class="text-center">
-					<input class="text-center form-control bg-dark text-white border-0" type="text" name="system" value="{$system}" maxlength="3" tabindex="2">
-				</td>
-				<td class="text-center">
-					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemRight" value="&gt;" onclick="galaxy_submit('systemRight')">
-				</td>
-				<td colspan="1">
-					<input class="btn bg-dark text-yellow text-center fs-12 fw-bold w-100" id="galaxySubmit" type="submit" value="{$LNG.gl_show}">
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="d-flex flex-wrap align-items-center justify-content-center gap-1 my-1">
+		<span class="text-white fw-bold">{$LNG.gl_galaxy}</span>
+		<input class="btn bg-dark m-0 text-yellow text-center fs-12 fw-bold" type="button" name="galaxyLeft" value="&lt;" onclick="galaxy_submit('galaxyLeft')">
+		<input class="text-center bg-dark text-white border-0" type="text" name="galaxy" value="{$galaxy}" maxlength="3" tabindex="1" style="width:40px">
+		<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="galaxyRight" value="&gt;" onclick="galaxy_submit('galaxyRight')">
+		<span class="text-white fw-bold">{$LNG.gl_solar_system}</span>
+		<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemLeft" value="&lt;" onclick="galaxy_submit('systemLeft')">
+		<input class="text-center bg-dark text-white border-0" type="text" name="system" value="{$system}" maxlength="3" tabindex="2" style="width:40px">
+		<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" type="button" name="systemRight" value="&gt;" onclick="galaxy_submit('systemRight')">
+		<input class="btn bg-dark text-yellow text-center fs-12 fw-bold" id="galaxySubmit" type="submit" value="{$LNG.gl_show}">
 	</div>
 	</form>
 	{if $action == 'sendMissle'}
