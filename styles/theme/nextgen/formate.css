@@ -274,7 +274,7 @@ input[type="radio"] {
 }
 
 .fs-12{
-	font-size: 14px;
+	font-size: 14px!important;
 }
 .fs-11{
 	font-size: 13px!important;
