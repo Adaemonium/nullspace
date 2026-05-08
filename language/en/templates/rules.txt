@@ -43,7 +43,7 @@ This includes but is not limited to:
 		<h1>6. Reporting</h1>
 		<p>In the event that any of these rules are broken, submit a support request, and provide any details including:
 		<br />- Username(s) of account(s) involved.
-		<br />- Timeframe in which the violations occurred and timezone of stated timeframe (you).
+		<br />- Timeframe in which the violation(s) occurred, and your timezone.
 		<br /></p>
 	</li>
 	<li>
