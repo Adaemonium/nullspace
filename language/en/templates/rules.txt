@@ -49,10 +49,10 @@ This includes but is not limited to:
 	<li>
 		<h1>7. Violations</h1>
 		<p>In the event that the rules above are violated once or more times, an administrator will take the following action:
-		<br /> <br />a. Multi-accounting: Complete removal of all accounts.
-		<br /> <br />b. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
-		<br /> <br />c. Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
-		<br /> <br />d. Depending on severity: suspension of 96 hours, or complete removal of account.
-		<br /> <br />e. Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
+		<br /> <br />1. Multi-accounting: Complete removal of all accounts.
+		<br /> <br />2. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
+		<br /> <br />3. Bashing: Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
+		<br /> <br />4. Content: Depending on severity: suspension of 96 hours, or complete removal of account.
+		<br /> <br />5. Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
 	</li>
 </ul>
