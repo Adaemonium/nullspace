@@ -2,9 +2,9 @@
 <footer class="dark-blur-bg footer-container box-shadow-large">
 <a class="fs-6 m-0 rounded px-2 mb-1 text-white" href="https://ultimatexnova.de/" title="ultimateXnova" target="copy">ultimateXnova</a>{$VERSION} |
 
-<a href="https://2moons.de/" class="text-white" target="_blank">2Moons</a> |
-
 Designed by <a href="https://github.com/Pfahli" class="text-white" target="_blank">Pfahli</a> |
+
+<a href="https://2moons.de/" class="text-white" target="_blank">2Moons</a> |
 
 <a href="index.php?page=disclamer">{$LNG.menu_disclamer}</a>
 
