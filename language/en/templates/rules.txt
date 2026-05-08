@@ -25,7 +25,7 @@ This includes but is not limited to:
 	</li>
 	<li>
 		<h1>4. Exploiting Bugs</h1>
-		<p>d. Exploiting a bug intentionally is strictly forbidden.</p>
+		<p>Exploiting a bug intentionally is strictly forbidden.</p>
 	</li>
 	<li>
 		<h1>5. Content</h1>
@@ -53,6 +53,6 @@ This includes but is not limited to:
 		<br /> <br />2. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
 		<br /> <br />3. Bashing: Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
 		<br /> <br />4. Exploiting Bugs: Depending on severity: suspension of 96 hours, or complete removal of account.
-		<br /> <br />5. Content: Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
+		<br /> <br />5. Content: Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.), or illegal (2.) will result in a permanent ban. </p>
 	</li>
 </ul>
