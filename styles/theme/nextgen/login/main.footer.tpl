@@ -2,10 +2,6 @@
 <footer class="dark-blur-bg footer-container box-shadow-large">
 <a class="fs-6 m-0 rounded px-2 mb-1 text-white" href="https://ultimatexnova.de/" title="ultimateXnova" target="copy">ultimateXnova</a>{$VERSION} |
 
-{if isModuleAvailable($smarty.const.MODULE_FORUM)}{if !empty($hasBoard)}
-<a class="font-size-12 px-2 border-end text-white hover-underline" href="game.php?page=board" target="forum">{$LNG.lm_forums}</a>
-{/if}{/if} |
-
 Designed by <a href="https://github.com/Pfahli" class="text-white" target="_blank">Pfahli</a> |
 
 <a href="index.php?page=disclamer">{$LNG.menu_disclamer}</a>

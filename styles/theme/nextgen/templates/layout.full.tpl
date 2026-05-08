@@ -129,10 +129,9 @@
 			<a class="font-size-12 px-2 border-end text-white hover-underline" href="{$discordUrl}" target="copy">Stoat</a>
 			{/if}
 
-			<a href="https://github.com/Pfahli" target="_blank" class=" font-size-12 text-white">Designed by Pfahli</a>
-
-
-			
+			{if isModuleAvailable($smarty.const.MODULE_FORUM)}{if !empty($hasBoard)}
+			<a class="font-size-12 px-2 border-end text-white hover-underline" href="game.php?page=board" target="forum">{$LNG.lm_forums}</a>
+			{/if}{/if}
 		</div>
 
 		{include file="main.footer.tpl" nocache}
