@@ -25,26 +25,31 @@ This includes but is not limited to:
 	</li>
 	<li>
 		<h1>4. Exploiting Bugs</h1>
-		<p>d. Using a bug for anyones profit intentionally or not reporting a bug intentionally is strictly forbidden.</p>
+		<p>d. Exploiting a bug intentionally is strictly forbidden.</p>
 	</li>
 	<li>
 		<h1>5. Content</h1>
-		<p>e. When chatting and communicating:
+		<p>e. While in chat and/or communicating via ingame-messaging:
 <br />
-<br />- Be respectful - no harassment, bullying, or hate speech.
-<br />- No Spamming – Avoid flooding chat with repeated messages, excessive emojis, or irrelevant content.
-<br />- No Illegal Content – Do not share pirated material, threats, or anything illegal.
-<br />- Use Appropriate Language – Avoid offensive or NSFW language
-<br />- Respect Decisions – Moderators and admins have the final say.
-<br />- Report Problems Calmly – If issues arise, report them and maintain patience.</p>
+<br />1. Be respectful - no harassment, bullying, or hate speech.
+<br />2. No Illegal Content – Do not share pirated material, threats, or anything illegal.
+<br />2. No Spamming – Avoid flooding chat with repeated messages, excessive emojis, or irrelevant content.
+<br />4. Use Appropriate Language – Avoid offensive or NSFW language
+<br />5. Respect Decisions – Moderators and admins have the final say.
+<br />6. Report Problems Calmly – If issues arise, report them and maintain patience.</p>
 	</li>
 	<li>
-		<h1>6. Violations</h1>
+	<li>
+		<h1>6. Support</h1>
+		<p>In the event that any of these</p>
+	</li>
+	<li>
+		<h1>7. Violations</h1>
 		<p>In the event that the rules above are violated once or more times, an administrator will take the following action:
 		<br /> <br />a. Multi-accounting: Complete removal of all accounts.
 		<br /> <br />b. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), followed by complete removal of account.
 		<br /> <br />c. Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), followed by complete removal of account.
 		<br /> <br />d. Depending on severity: suspension of 96 hours, or complete removal of account.
-		<br /> <br />e. Suspension of account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable or illegal will result in a permanent ban. </p>
+		<br /> <br />e. Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
 	</li>
 </ul>
