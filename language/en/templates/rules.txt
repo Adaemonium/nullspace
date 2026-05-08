@@ -1,12 +1,12 @@
 <ul id="rules">
 	<li>
 		<h1>1. Accounts</h1>
-		<p>a. Each player is only permitted to control a single account.
+		<p>Each player is only permitted to control a single account.
 		</p>
 	</li>
 	<li>
 		<h1>2. Pushing</h1>
-		<p>b. It is not permitted for any account to obtain profit out of a lower ranked account in any matter regarding resources or manipulation of fleets.
+		<p>It is not permitted for any account to obtain profit out of a lower ranked account in any matter regarding resources or manipulation of fleets.
 This includes but is not limited to:
 <br />
 <br />- Resources sent from a lower ranked account to a higher ranked one with nothing tangible in return.
@@ -20,7 +20,7 @@ This includes but is not limited to:
 	</li>
 	<li>
 		<h1>3. Bashing</h1>
-		<p>c. It is not permitted to attack any given planet or moon owned by a player over 6 times in a single 24 hour period.
+		<p>It is not permitted to attack any given planet or moon owned by a player over 6 times in a single 24 hour period.
 <br />The bashing rule only applies for active users and excludes misile attacks and espionage missions.</p>
 	</li>
 	<li>
@@ -29,7 +29,7 @@ This includes but is not limited to:
 	</li>
 	<li>
 		<h1>5. Content</h1>
-		<p>e. While in chat and/or communicating via in-game-messaging:
+		<p>While in chat and/or communicating via in-game-messaging:
 <br />
 <br />1. Be respectful - no harassment, bullying, or hate speech.
 <br />2. No Illegal Content – Do not share pirated material, threats, or anything illegal.
@@ -52,7 +52,7 @@ This includes but is not limited to:
 		<br /> <br />1. Multi-accounting: Complete removal of all accounts.
 		<br /> <br />2. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
 		<br /> <br />3. Bashing: Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
-		<br /> <br />4. Content: Depending on severity: suspension of 96 hours, or complete removal of account.
-		<br /> <br />5. Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
+		<br /> <br />4. Exploiting Bugs: Depending on severity: suspension of 96 hours, or complete removal of account.
+		<br /> <br />5. Content: Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Content or behaviour deemed extremely unacceptable (1.) or illegal (2.) will result in a permanent ban. </p>
 	</li>
 </ul>
