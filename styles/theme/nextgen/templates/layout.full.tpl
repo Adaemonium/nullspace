@@ -130,7 +130,7 @@
 			{/if}
 
 			{if isModuleAvailable($smarty.const.MODULE_FORUM)}{if !empty($hasBoard)}
-			<a class="font-size-12 px-2 border-end text-white hover-underline" href="game.php?page=board" target="forum">{$LNG.lm_forums}</a>
+			<a class="font-size-12 px-2 text-white hover-underline" href="game.php?page=board" target="forum">{$LNG.lm_forums}</a>
 			{/if}{/if}
 		</div>
 
