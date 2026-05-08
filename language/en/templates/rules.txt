@@ -15,6 +15,7 @@ This includes but is not limited to:
 <br />- Trades in which the higher ranked player does not exchange the resources within 48 hours.
 <br />- A higher ranked player participating in any form of extortion.
 <br />- Trades that fall outside the following ratio:
+<br />
 <br />3:2:1 Where each unit of deuterium is worth 2 units of crystal or 3 units of metal.</p>
 	</li>
 	<li>
