@@ -59,7 +59,7 @@ $LNG['fm_fleets'] = "Fleets";
 
 //-------------------- MODULE 45 UNIVERSE INFORMATION ------------------//
 
-$LNG['si_universe_info'] = "Universe Info";
+$LNG['si_universe_info'] = "Universe";
 $LNG['si_game_speed'] = "Game Speed";
 $LNG['si_fleet_speed'] = "Fleet Speed";
 $LNG['si_production_speed'] = "Production Speed";
@@ -146,7 +146,7 @@ $LNG['lm_logout']							= 'Logout';
 $LNG['lm_administration']					= 'Administration';
 $LNG['lm_queue']							= 'Queues';
 $LNG['lm_topkb']							= 'Hall of Fame';
-$LNG['lm_faq']								= 'FAQ';
+$LNG['lm_faq']								= 'Guide';
 $LNG['lm_records']							= 'Records';
 $LNG['lm_chat']								= 'Chat';
 $LNG['lm_support']							= 'Support';
