@@ -72,6 +72,7 @@ class CustomAJAXChat extends AJAXChat
 
 	function initCustomConfig()
 	{
+		error_log('initCustomConfig started, session_id: '.session_id());
 		define('MODE', 'CHAT');
 		define('ROOT_PATH', str_replace('\\', '/',dirname(dirname(dirname(dirname(__FILE__))))).'/');
 		set_include_path(ROOT_PATH);
