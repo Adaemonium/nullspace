@@ -34,6 +34,7 @@
 		<th style="width:4%">ID</th>
 		<th style="width:15%">Time</th>
 		<th style="width:15%">Username</th>
+		<th style="width:5%">Ch.ID</th>
 		<th style="width:10%">Channel</th>
 		<th>Message</th>
 	</tr>
@@ -42,6 +43,7 @@
 		<td>{$logRow.id}</td>
 		<td>{$logRow.time}</td>
 		<td>{$logRow.username}</td>
+		<td>{$logRow.channelID}</td>
 		<td>{$logRow.channel}</td>
 		<td>{$logRow.text}</td>
 	</tr>

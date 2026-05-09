@@ -208,6 +208,7 @@ class ShowChatPage extends AbstractAdminPage
 				'username'  => $row['userName'],
 				'role'      => $row['userRole'],
 				'channel' => isset($allianceMap[$row['channel']]) ? $allianceMap[$row['channel']] : ($row['channel'] == 0 ? $defaultChannelName : $row['channel']),
+				'channelID' => $row['channel'],
 				'time'      => _date($LNG['php_tdformat'], strtotime($row['dateTime']), $USER['timezone']),
 				'ip'        => inet_ntop($row['ip']),
 				'text'      => $row['text'],
