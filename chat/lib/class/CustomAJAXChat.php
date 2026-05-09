@@ -85,9 +85,6 @@ class CustomAJAXChat extends AJAXChat
 		require 'includes/config.php';
 		require 'includes/common.php';
 
-		error_log('SESSION valid: '.var_export(Session::load()->isValidSession(), true));
-		error_log('USER ID: '.var_export(Session::load()->userId, true));
-
 		$this->setConfig('dbConnection', 'type', 'mysqli');
 		$this->setConfig('dbConnection', 'host', $database['host']);
 		$this->setConfig('dbConnection', 'user', $database['user']);
