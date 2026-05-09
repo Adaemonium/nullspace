@@ -72,16 +72,10 @@ class CustomAJAXChat extends AJAXChat
 
 	function initCustomConfig()
 	{
-		error_log('initCustomConfig started, session_id: '.session_id());
 		define('MODE', 'CHAT');
 		define('ROOT_PATH', str_replace('\\', '/',dirname(dirname(dirname(dirname(__FILE__))))).'/');
 		set_include_path(ROOT_PATH);
 		chdir(ROOT_PATH);
-
-		// Override SCRIPT_FILENAME so HTTP_ROOT resolves to game root, not /chat/
-		$_SERVER['SCRIPT_FILENAME'] = ROOT_PATH.'index.php';
-		$_SERVER['REQUEST_URI'] = '/index.php';
-		error_log('HTTP_ROOT will be: '.str_replace(basename('index.php'), '', parse_url('/index.php', PHP_URL_PATH)));
 
 		$database		= array();
 		require 'includes/config.php';

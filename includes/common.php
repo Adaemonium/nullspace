@@ -59,8 +59,6 @@ require 'includes/classes/HTTP.class.php';
 require 'includes/classes/Language.class.php';
 require 'includes/classes/PlayerUtil.class.php';
 require 'includes/classes/Session.class.php';
-error_log('common.php SESSION obj: '.var_export(isset($_SESSION["obj"]), true));
-error_log('common.php session_id: '.session_id());
 require 'includes/classes/Universe.class.php';
 
 require 'includes/classes/class.theme.php';
@@ -247,12 +245,8 @@ elseif(MODE === 'LOGIN')
 }
 elseif(MODE === 'CHAT')
 {
-	error_log('CHAT mode - PHP session_id: '.session_id());
-	error_log('CHAT mode - cookie 2Moons: '.var_export(isset($_COOKIE['2Moons']), true));
-	error_log('CHAT mode - cookie value: '.var_export($_COOKIE['2Moons'] ?? 'not set', true));
 	$session = Session::load();
-	error_log('CHAT after load - session_id: '.session_id());
-	error_log('CHAT isValid: '.var_export($session->isValidSession(), true));
+
 	if(!$session->isValidSession())
 	{
 		HTTP::redirectTo('index.php?code=3');
