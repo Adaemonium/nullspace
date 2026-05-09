@@ -201,6 +201,7 @@ class ShowChatPage extends AbstractAdminPage
 			'username'      => $username,
 			'dateStart'     => $dateStart,
 			'dateEnd'       => $dateEnd,
+			'mode'          => 'log',
 		));
 
 		$this->display('page.chat.log.tpl');
