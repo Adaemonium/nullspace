@@ -77,6 +77,10 @@ class CustomAJAXChat extends AJAXChat
 		set_include_path(ROOT_PATH);
 		chdir(ROOT_PATH);
 
+		// Override SCRIPT_FILENAME so HTTP_ROOT resolves to game root, not /chat/
+		$_SERVER['SCRIPT_FILENAME'] = ROOT_PATH.'index.php';
+		$_SERVER['REQUEST_URI'] = '/index.php';
+
 		$database		= array();
 		require 'includes/config.php';
 		require 'includes/common.php';
