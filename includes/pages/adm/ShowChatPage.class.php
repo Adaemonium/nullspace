@@ -180,6 +180,19 @@ class ShowChatPage extends AbstractAdminPage
 
 		$rawLogs = $db->select($sql, $params);
 
+		// Get default channel name
+		$config = Config::get(Universe::getEmulated());
+		$defaultChannelName = $config->chat_channelname;
+
+		// Get alliance names for channel mapping
+		$allianceSql = "SELECT id, ally_name FROM %%ALLIANCE%%;";
+		$alliances = $db->select($allianceSql, array());
+		$allianceMap = array();
+		foreach($alliances as $alliance)
+		{
+			$allianceMap[$alliance['id'] + 100] = '+'.$alliance['ally_name'];
+		}
+
 		$logList = array();
 		foreach($rawLogs as $row)
 		{
@@ -187,7 +200,7 @@ class ShowChatPage extends AbstractAdminPage
 				'id'        => $row['id'],
 				'username'  => $row['userName'],
 				'role'      => $row['userRole'],
-				'channel'   => $row['channel'],
+				'channel' => isset($allianceMap[$row['channel']]) ? $allianceMap[$row['channel']] : ($row['channel'] == 0 ? $defaultChannelName : $row['channel']),
 				'time'      => _date($LNG['php_tdformat'], strtotime($row['dateTime']), $USER['timezone']),
 				'ip'        => inet_ntop($row['ip']),
 				'text'      => $row['text'],
