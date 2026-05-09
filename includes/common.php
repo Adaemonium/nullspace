@@ -239,6 +239,7 @@ if (MODE === 'INGAME' || MODE === 'ADMIN' || MODE === 'CRON')
 		$LNG->includeData(array('ADMIN', 'CUSTOM'));
 	}
 }
+error_log('MODE is: '.MODE);
 elseif(MODE === 'LOGIN')
 {
 	$LNG	= new Language();
