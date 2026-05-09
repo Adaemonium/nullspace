@@ -6,12 +6,12 @@
 		<th colspan="6">Chat Log</th>
 	</tr>
 	<tr>
-		<td style="width:15%">Username</td>
-		<td style="width:35%"><input type="text" name="username" value="{$username}" class="form-control bg-dark text-white border-0"></td>
-		<td style="width:15%">Channel</td>
-        <td style="width:35%"><input type="text" name="channel" value="{$channel}" class="form-control bg-dark text-white border-0"></td>
-		<td style="width:15%">Date Range</td>
-		<td style="width:35%">
+		<td style="width:8%">Username</td>
+		<td style="width:17%"><input type="text" name="username" value="{$username}" class="form-control bg-dark text-white border-0"></td>
+		<td style="width:8%">Channel</td>
+        <td style="width:17%"><input type="text" name="channel" value="{$channel}" class="form-control bg-dark text-white border-0"></td>
+		<td style="width:10%">Date Range</td>
+		<td style="width:40%">
 			<input value="{$dateStart.day|default:''}" type="text" name="dateStart[day]" style="width:25px" maxlength="2" placeholder="dd">.<input value="{$dateStart.month|default:''}" type="text" name="dateStart[month]" style="width:25px" maxlength="2" placeholder="mm">.<input value="{$dateStart.year|default:''}" type="text" name="dateStart[year]" style="width:35px" maxlength="4" placeholder="yyyy">
 			&nbsp;-&nbsp;
 			<input value="{$dateEnd.day|default:''}" type="text" name="dateEnd[day]" style="width:25px" maxlength="2" placeholder="dd">.<input value="{$dateEnd.month|default:''}" type="text" name="dateEnd[month]" style="width:25px" maxlength="2" placeholder="mm">.<input value="{$dateEnd.year|default:''}" type="text" name="dateEnd[year]" style="width:35px" maxlength="4" placeholder="yyyy">
