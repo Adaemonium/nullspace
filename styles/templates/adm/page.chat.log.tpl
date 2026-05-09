@@ -1,13 +1,15 @@
 {block name="content"}
 <form action="admin.php?page=chat&mode=log" method="post" id="form">
 <input type="hidden" name="side" value="{$page}" id="side">
-<table class="table table-dark table-striped table-sm fs-12 w-50 my-5 mx-auto">
+<table class="table table-dark table-striped table-sm fs-12 my-5 mx-auto">
 	<tr>
-		<th colspan="4">Chat Log</th>
+		<th colspan="6">Chat Log</th>
 	</tr>
 	<tr>
 		<td style="width:15%">Username</td>
 		<td style="width:35%"><input type="text" name="username" value="{$username}" class="form-control bg-dark text-white border-0"></td>
+		<td style="width:15%">Channel</td>
+        <td style="width:35%"><input type="text" name="channel" value="{$channel}" class="form-control bg-dark text-white border-0"></td>
 		<td style="width:15%">Date Range</td>
 		<td style="width:35%">
 			<input value="{$dateStart.day|default:''}" type="text" name="dateStart[day]" style="width:25px" maxlength="2" placeholder="dd">.<input value="{$dateStart.month|default:''}" type="text" name="dateStart[month]" style="width:25px" maxlength="2" placeholder="mm">.<input value="{$dateStart.year|default:''}" type="text" name="dateStart[year]" style="width:35px" maxlength="4" placeholder="yyyy">
@@ -16,7 +18,7 @@
 		</td>
 	</tr>
 	<tr>
-		<th colspan="4" class="center">
+		<th colspan="6" class="center">
 			<input type="submit" value="Search">
 		</th>
 	</tr>

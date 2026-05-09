@@ -126,6 +126,7 @@ class ShowChatPage extends AbstractAdminPage
 
 		$page       = HTTP::_GP('side', 1);
 		$username   = HTTP::_GP('username', '', UTF8_SUPPORT);
+		$channel = HTTP::_GP('channel', '', UTF8_SUPPORT);
 		$dateStart  = HTTP::_GP('dateStart', array());
 		$dateEnd    = HTTP::_GP('dateEnd', array());
 
@@ -162,6 +163,12 @@ class ShowChatPage extends AbstractAdminPage
 		{
 			$whereSQL .= ' AND userName = :username';
 			$params[':username'] = $username;
+		}
+
+		if(!empty($channel))
+		{
+			$whereSQL .= ' AND channel = :channel';
+			$params[':channel'] = $channel;
 		}
 
 		$countSql = "SELECT COUNT(*) as count FROM %%CHAT_MES%% WHERE 1=1 ".$whereSQL.";";
@@ -214,6 +221,7 @@ class ShowChatPage extends AbstractAdminPage
 			'username'      => $username,
 			'dateStart'     => $dateStart,
 			'dateEnd'       => $dateEnd,
+			'channel' 		=> $channel,
 			'mode'          => 'log',
 		));
 
