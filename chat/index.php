@@ -1,5 +1,5 @@
 <?php
-error_log('chat/index.php reached, session_id: '.session_id());
+file_put_contents('/tmp/chat_debug.log', 'chat/index.php reached '.date('H:i:s')."\n", FILE_APPEND);
 /**
 *  ultimateXnova
 *  based on 2moons by Jan-Otto Kröpke 2009-2016
