@@ -1,5 +1,5 @@
 <?php
-
+error_log('chat/index.php reached, session_id: '.session_id());
 /**
 *  ultimateXnova
 *  based on 2moons by Jan-Otto Kröpke 2009-2016
