@@ -247,9 +247,11 @@ elseif(MODE === 'LOGIN')
 }
 elseif(MODE === 'CHAT')
 {
-	$session	= Session::load();
-	error_log('CHAT session_id: '.session_id());
-	error_log('CHAT userId: '.var_export($session->userId, true));
+	error_log('CHAT mode - PHP session_id: '.session_id());
+	error_log('CHAT mode - cookie 2Moons: '.var_export(isset($_COOKIE['2Moons']), true));
+	error_log('CHAT mode - cookie value: '.var_export($_COOKIE['2Moons'] ?? 'not set', true));
+	$session = Session::load();
+	error_log('CHAT after load - session_id: '.session_id());
 	error_log('CHAT isValid: '.var_export($session->isValidSession(), true));
 	if(!$session->isValidSession())
 	{
