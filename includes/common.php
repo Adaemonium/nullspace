@@ -248,7 +248,9 @@ elseif(MODE === 'LOGIN')
 elseif(MODE === 'CHAT')
 {
 	$session	= Session::load();
-
+	error_log('CHAT session_id: '.session_id());
+	error_log('CHAT userId: '.var_export($session->userId, true));
+	error_log('CHAT isValid: '.var_export($session->isValidSession(), true));
 	if(!$session->isValidSession())
 	{
 		HTTP::redirectTo('index.php?code=3');
