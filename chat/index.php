@@ -1,5 +1,5 @@
 <?php
-file_put_contents('/tmp/chat_debug.log', 'chat/index.php reached '.date('H:i:s')."\n", FILE_APPEND);
+file_put_contents('/var/www/html/chat/debug.txt', 'chat/index.php reached '.date('H:i:s')."\n", FILE_APPEND);
 /**
 *  ultimateXnova
 *  based on 2moons by Jan-Otto Kröpke 2009-2016
