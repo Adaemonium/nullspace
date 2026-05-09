@@ -121,4 +121,89 @@ class ShowChatPage extends AbstractAdminPage
 
 	}
 
+	function log(){
+		global $LNG, $USER;
+
+		$page       = HTTP::_GP('side', 1);
+		$username   = HTTP::_GP('username', '', UTF8_SUPPORT);
+		$dateStart  = HTTP::_GP('dateStart', array());
+		$dateEnd    = HTTP::_GP('dateEnd', array());
+
+		$db = Database::get();
+
+		$perSide    = 50;
+		$whereSQL   = '';
+		$params     = array();
+
+		$dateStart  = array_filter($dateStart, 'is_numeric');
+		$dateEnd    = array_filter($dateEnd, 'is_numeric');
+
+		$useDateStart   = count($dateStart) == 3;
+		$useDateEnd     = count($dateEnd) == 3;
+
+		if($useDateStart && $useDateEnd)
+		{
+			$whereSQL .= ' AND dateTime BETWEEN :dateStart AND :dateEnd';
+			$params[':dateStart'] = date('Y-m-d H:i:s', mktime(0, 0, 0, (int) $dateStart['month'], (int) $dateStart['day'], (int) $dateStart['year']));
+			$params[':dateEnd']   = date('Y-m-d H:i:s', mktime(23, 59, 59, (int) $dateEnd['month'], (int) $dateEnd['day'], (int) $dateEnd['year']));
+		}
+		elseif($useDateStart)
+		{
+			$whereSQL .= ' AND dateTime > :dateStart';
+			$params[':dateStart'] = date('Y-m-d H:i:s', mktime(0, 0, 0, (int) $dateStart['month'], (int) $dateStart['day'], (int) $dateStart['year']));
+		}
+		elseif($useDateEnd)
+		{
+			$whereSQL .= ' AND dateTime < :dateEnd';
+			$params[':dateEnd'] = date('Y-m-d H:i:s', mktime(23, 59, 59, (int) $dateEnd['month'], (int) $dateEnd['day'], (int) $dateEnd['year']));
+		}
+
+		if(!empty($username))
+		{
+			$whereSQL .= ' AND userName = :username';
+			$params[':username'] = $username;
+		}
+
+		$countSql = "SELECT COUNT(*) as count FROM %%CHAT_MES%% WHERE 1=1 ".$whereSQL.";";
+		$MessageCount = $db->selectSingle($countSql, $params, 'count');
+
+		$maxPage    = max(1, ceil($MessageCount / $perSide));
+		$page       = max(1, min($page, $maxPage));
+		$sqlLimit   = (($page - 1) * $perSide).", ".($perSide - 1);
+
+		$sql = "SELECT id, userName, userRole, channel, dateTime, ip, text
+		FROM %%CHAT_MES%%
+		WHERE 1=1
+		".$whereSQL."
+		ORDER BY dateTime DESC
+		LIMIT ".$sqlLimit.";";
+
+		$rawLogs = $db->select($sql, $params);
+
+		$logList = array();
+		foreach($rawLogs as $row)
+		{
+			$logList[] = array(
+				'id'        => $row['id'],
+				'username'  => $row['userName'],
+				'role'      => $row['userRole'],
+				'channel'   => $row['channel'],
+				'time'      => _date($LNG['php_tdformat'], strtotime($row['dateTime']), $USER['timezone']),
+				'ip'        => inet_ntop($row['ip']),
+				'text'      => $row['text'],
+			);
+		}
+
+		$this->assign(array(
+			'logList'       => $logList,
+			'maxPage'       => $maxPage,
+			'page'          => $page,
+			'username'      => $username,
+			'dateStart'     => $dateStart,
+			'dateEnd'       => $dateEnd,
+		));
+
+		$this->display('page.chat.log.tpl');
+	}
+
 }
