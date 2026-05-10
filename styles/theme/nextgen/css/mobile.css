@@ -19,8 +19,6 @@
     .top-bar .uk-navbar-nav {
       gap: 20px !important;
       justify-content: center !important;
-      width: 100% !important;
-      align-items: center !important;
     }
     .top-bar .uk-navbar-nav > li > a {
       min-height: auto !important;
