@@ -2,6 +2,11 @@
     #main-navigation {
       width: 100% !important;
     }
+    .top-bar {
+      display: flex !important;
+      align-items: center !important;
+      min-height: 40px !important;
+    }
     .top-bar .uk-navbar-center {
       position: relative !important;
       left: auto !important;
@@ -9,17 +14,18 @@
       transform: none !important;
       width: 100% !important;
       justify-content: center !important;
+      align-items: center !important;
     }
     .top-bar .uk-navbar-nav {
       gap: 8px !important;
       justify-content: center !important;
       width: 100% !important;
+      align-items: center !important;
     }
     .top-bar .uk-navbar-nav > li > a {
       min-height: auto !important;
-    }
-    .top-bar .uk-navbar-nav > li > a > i.bi {
-      font-size: 20px !important;
+      align-items: center !important;
+      display: flex !important;
     }
     .main-menu-container, .toggle-menu-button-container  {
       min-width: 100% !important;
