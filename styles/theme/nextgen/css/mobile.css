@@ -18,7 +18,7 @@
     .top-bar .uk-navbar-nav > li > a {
       min-height: auto !important;
     }
-    .top-bar .bi {
+    .top-bar .uk-navbar-nav > li > a > i.bi {
       font-size: 20px !important;
     }
     .main-menu-container, .toggle-menu-button-container  {
