@@ -21,7 +21,7 @@ This includes but is not limited to:
 	<li>
 		<h1>3. Bashing</h1>
 		<p>It is not permitted to attack any given planet or moon owned by a player over 6 times in a single 24 hour period.
-<br />The bashing rule only applies for active users and excludes misile attacks and espionage missions.</p>
+<br />The bashing rule only applies for active users and excludes missile attacks and espionage missions.</p>
 	</li>
 	<li>
 		<h1>4. Exploiting Bugs</h1>
@@ -34,25 +34,26 @@ This includes but is not limited to:
 <br />1. Be respectful - no harassment, bullying, or hate speech.
 <br />2. No Illegal Content – Do not share pirated material, threats, or anything illegal.
 <br />3. No Spamming – Avoid flooding chat with repeated messages, excessive emojis, or irrelevant content.
-<br />4. Use Appropriate Language – Avoid offensive or NSFW language
+<br />4. Use Appropriate Language – Avoid offensive or NSFW language.
 <br />5. Respect Decisions – Moderators and admins have the final say.
 <br />6. Report Problems Calmly – If issues arise, report them and maintain patience.</p>
 	</li>
 	<li>
 	<li>
 		<h1>6. Reporting</h1>
-		<p>In the event that any of these rules are broken, submit a support request, and provide any details including:
+		<p>In the event that any of these rules are broken, submit a support ticket, and provide any details including:
 		<br />- Username(s) of account(s) involved.
-		<br />- Timeframe in which the violation(s) occurred, and your timezone.
-		<br /></p>
+		<br />- Timeframe (date/time - date/time) in which the violation(s) occurred, and your timezone.
+		<br /><br />Please refrain from using support tickets to express your grievances in occurances which follow standard gameplay.</p>
 	</li>
 	<li>
 		<h1>7. Violations</h1>
-		<p>In the event that the rules above are violated once or more times, an administrator will take the following action:
+		<p>In the event that the rules above are violated once or more times, an administrator will take the following action, effective from any time at the administrator's discretion:
 		<br /> <br />1. Multi-accounting: Complete removal of all accounts.
-		<br /> <br />2. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
-		<br /> <br />3. Bashing: Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete removal of account.
-		<br /> <br />4. Exploiting Bugs: Depending on severity: suspension of 96 hours, or complete removal of account.
-		<br /> <br />5. Content: Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Continued violations, content or behaviour deemed extremely unacceptable, or illegal (2.) will result in a permanent ban. </p>
+		<br /> <br />2. Pushing: Suspension of account for 24 hours. 24 hours are appended to subsequent violations up to 96 hours (3 times), consequently followed by complete reset of account.
+		<br /> <br />3. Bashing: Suspension of account for 24 hours with 24 hours appended for subsequent violations up to 96 hours (3 times), consequently followed by complete reset of account.
+		<br /> <br />4. Exploiting Bugs: Depending on severity: suspension of 96 hours, or complete reset of account.
+		<br /> <br />5. Content: Suspension of chat privileges or/and account for 24 hours with 24 hours appended for subsequent violations. Continued violations, content or behaviour deemed extremely unacceptable, or illegal (2.) will result in a permanent ban.
+		<br /> <br />The most serious remedial actions listed above are expected to be extremely rare, or ideally should never occur. Such actions are reserved for events or behaviour that negatively affect the wellbeing and/or participation of players in the universe.</p>
 	</li>
 </ul>
