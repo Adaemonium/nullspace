@@ -1,11 +1,4 @@
 @media (max-width: 960px) {
-    .top-bar .uk-navbar-nav > li {
-      padding: 0 !important;
-    }
-    .top-bar .uk-navbar-nav > li > a {
-      padding: 0 6px !important;
-      min-height: auto !important;
-    }
     #main-navigation {
       width: 100% !important;
     }
