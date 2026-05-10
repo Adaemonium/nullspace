@@ -3,11 +3,17 @@
       width: 100% !important;
     }
     .top-bar .uk-navbar-center {
+      position: relative !important;
+      left: auto !important;
+      top: auto !important;
+      transform: none !important;
       width: 100% !important;
+      justify-content: center !important;
     }
     .top-bar .uk-navbar-nav {
       gap: 8px !important;
       justify-content: center !important;
+      width: 100% !important;
     }
     .top-bar .uk-navbar-nav > li > a {
       min-height: auto !important;
