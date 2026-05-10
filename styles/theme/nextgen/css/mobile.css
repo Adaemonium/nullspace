@@ -2,6 +2,12 @@
     #main-navigation {
       width: 100% !important;
     }
+    .top-bar .uk-navbar-nav {
+      gap: 5px !important;
+    }
+    .top-bar .uk-navbar-nav > li > a {
+      min-height: auto !important;
+    }
     .main-menu-container, .toggle-menu-button-container  {
       min-width: 100% !important;
       width: 100% !important;
