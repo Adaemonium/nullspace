@@ -15,15 +15,6 @@
       width: 100% !important;
       justify-content: center !important;
     }
-    .top-bar .uk-navbar-nav {
-      gap: 20px !important;
-      justify-content: center !important;
-    }
-    .top-bar .uk-navbar-nav > li > a {
-      min-height: auto !important;
-      align-items: center !important;
-      display: flex !important;
-    }
     .main-menu-container, .toggle-menu-button-container  {
       min-width: 100% !important;
       width: 100% !important;
