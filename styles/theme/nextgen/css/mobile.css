@@ -2,8 +2,12 @@
     #main-navigation {
       width: 100% !important;
     }
+    .top-bar .uk-navbar-center {
+      width: 100% !important;
+    }
     .top-bar .uk-navbar-nav {
-      gap: 5px !important;
+      gap: 8px !important;
+      justify-content: center !important;
     }
     .top-bar .uk-navbar-nav > li > a {
       min-height: auto !important;
