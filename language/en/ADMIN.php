@@ -709,6 +709,7 @@ $LNG['mu_planets_options'] = 'Planets Options';
 $LNG['mu_user_logs'] = 'Admin Log';
 $LNG['mu_support'] = 'Support Tickets';
 $LNG['mu_chat'] = 'Chat Configuration';
+$LNG['mu_chatlog'] = 'Chat Log';
 $LNG['mu_module'] = 'Modules';
 $LNG['mu_mod_update'] = 'Checking version of MOD';
 $LNG['mu_fb_options'] = 'Registration by Facebook';
@@ -1051,7 +1052,7 @@ $LNG['po_add_moon'] = 'Add moon';
 
 $LNG['sp_admin_answer'] = 'Response of %s to %s<br><br><font color="red">%s</font>';
 $LNG['sp_answer_message_title'] = 'Support Ticket #%d';
-$LNG['sp_answer_message'] = 'Do you have a response to your ticket number: #%d!';
+$LNG['sp_answer_message'] = 'You have a response to your ticket: #%d!';
 $LNG['sp_admin_closed'] = '%s closed the Ticket to %s';
 $LNG['sp_admin_open'] = '%s reopened the Ticket to %s';
 
