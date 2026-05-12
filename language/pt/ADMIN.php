@@ -655,6 +655,7 @@ $LNG['mu_planets_options'] 				= 'Opções de Planetas';
 $LNG['mu_user_logs']				    = 'Log de Registo';
 $LNG['mu_support']                      = 'Tickets de Suporte';
 $LNG['mu_chat']                         = 'Configurações de Chat';
+$LNG['mu_chat_log']                     = 'Chat Log';
 $LNG['mu_module']                       = 'Modulos';
 $LNG['mu_mod_update']              		= 'Controlo de Versão do MOD';
 $LNG['mu_fb_options'] 					= 'Registo pelo Facebook';

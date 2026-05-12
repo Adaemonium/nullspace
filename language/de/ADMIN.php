@@ -627,6 +627,7 @@ $LNG['mu_connected'] = 'Online';
 $LNG['mu_settings'] = 'Server Konfiguration';
 $LNG['mu_unisettings'] = 'Uni Konfiguration';
 $LNG['mu_chat'] = 'Chat Konfiguration';
+$LNG['mu_chat_log'] = 'Chat Log';
 $LNG['mu_global_message'] = 'Globale Nachrichten';
 $LNG['mu_users_settings'] = 'Menü Bearbeiten';
 $LNG['mu_add_delete_resources'] = 'Account Editor';

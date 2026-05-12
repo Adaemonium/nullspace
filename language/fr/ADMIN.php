@@ -650,6 +650,7 @@ $LNG['mu_planets_options']         	= 'Options Planètes';
 $LNG['mu_user_logs']               	= 'Log';
 $LNG['mu_support']                 	= 'Support Tickets';
 $LNG['mu_chat']                   	= 'Administration Chat';
+$LNG['mu_chat_log']                  = 'Chat Log';
 $LNG['mu_module']                 	= 'Module';
 $LNG['mu_mod_update']              	= 'Contrôle Mod Version';
 $LNG['mu_fb_options'] 				= 'Connexion Facebook';

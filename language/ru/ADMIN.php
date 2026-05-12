@@ -594,6 +594,7 @@ $LNG['mu_planets_options']             = 'Опции планет';
 $LNG['mu_user_logs']                   = 'Лог';
 $LNG['mu_support']                     = 'Техническая поддержка';
 $LNG['mu_chat']                        = 'Настройки чата';
+$LNG['mu_chat_log']                    = 'Chat Log';
 $LNG['mu_module']                      = 'Модули';
 $LNG['mu_mod_update']                  = 'Мод управления версиями';
 $LNG['mu_fb_options']                  = 'Facebook';

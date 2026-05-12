@@ -618,6 +618,7 @@ $LNG['mu_connected']				= 'Conectados';
 $LNG['mu_settings']					= 'Configuración';
 $LNG['mu_unisettings']				= 'Conf. de Universo';
 $LNG['mu_chat']						= 'Conf. Chat';
+$LNG['mu_chat_log']                 = 'Chat Log';
 $LNG['mu_global_message']			= 'Mensaje Global';
 $LNG['mu_users_settings']			= 'Conf. de Usuarios';
 $LNG['mu_add_delete_resources']		= 'Editor de Cuentas';
