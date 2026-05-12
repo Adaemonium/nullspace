@@ -75,7 +75,7 @@ $(document).ready(function(){
 
     {if allowedTo('ShowChatPage')}
       <li class="d-flex {if $currentPage == 'chat' && $mode == 'log'}menu-active{/if}">
-        <a class="d-flex w-100 h-100 p-1 text-decoration-none text-white fs-6" href="?page=chat&mode=log" >$LNG.mu_chatlog}</a>
+        <a class="d-flex w-100 h-100 p-1 text-decoration-none text-white fs-6" href="?page=chat&mode=log" >{$LNG.mu_chatlog}</a>
       </li>
     {/if}
 
