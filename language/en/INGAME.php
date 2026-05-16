@@ -241,6 +241,7 @@ $LNG['gl_short_friend']						= '';
 $LNG['gl_short_member']						= '';
 $LNG['gl_short_strong']						= 'S';
 $LNG['gl_short_newbie']						= 'N';
+$LNG['gl_short_bot']                        = 'b';
 $LNG['gl_short_vacation']					= 'VM';
 $LNG['gl_short_ban']						= 'B';
 $LNG['gl_short_inactive']					= 'i';

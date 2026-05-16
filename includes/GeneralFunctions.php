@@ -59,7 +59,12 @@ function userStatus($data, $noobprotection = false)
 {
 	$Array = array();
 
-	if (!empty($data['is_bot']) || (isset($data['authlevel']) && $data['authlevel'] == 3)) {
+	if (isset($data['authlevel']) && $data['authlevel'] == 3) {
+		return $Array;
+	}
+
+	if (!empty($data['is_bot'])) {
+		$Array[] = 'bot';
 		return $Array;
 	}
 
