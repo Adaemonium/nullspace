@@ -59,7 +59,7 @@ function userStatus($data, $noobprotection = false)
 {
 	$Array = array();
 
-	if (!empty($data['is_bot']) || (isset($data['authlevel']) && $data['authlevel'] >= 1)) {
+	if (!empty($data['is_bot']) || (isset($data['authlevel']) && $data['authlevel'] == 3)) {
 		return $Array;
 	}
 
@@ -321,7 +321,7 @@ function CheckNoobProtec($OwnerPlayer, $TargetPlayer, $Player)
 {
 	$config	= Config::get();
 
-	if (!empty($Player['is_bot']) || (isset($Player['authlevel']) && $Player['authlevel'] >= 1)) {
+	if (!empty($Player['is_bot']) || (isset($Player['authlevel']) && $Player['authlevel'] == 3)) {
 		return array('NoobPlayer' => false, 'StrongPlayer' => false);
 	}
 

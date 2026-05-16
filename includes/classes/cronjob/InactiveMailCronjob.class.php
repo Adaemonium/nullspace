@@ -34,7 +34,7 @@ class InactiveMailCronjob
 			require 'includes/classes/Mail.class.php';
 
 			$sql	= 'SELECT `id`, `username`, `lang`, `email`, `onlinetime`, `timezone`, `universe`
-			FROM %%USERS%% WHERE `inactive_mail` = 0 AND `onlinetime` < :time AND `is_bot` = 0 AND `authlevel` = 0;';
+			FROM %%USERS%% WHERE `inactive_mail` = 0 AND `onlinetime` < :time AND `is_bot` = 0 AND `authlevel` != 3;';
 
 			$inactiveUsers	= Database::get()->select($sql, array(
 				':time'	=> TIMESTAMP - $config->del_user_sendmail * 24 * 60 * 60
