@@ -88,7 +88,7 @@ class ShowStatisticsPage extends AbstractGamePage
                 $start = max(floor(($range - 1) / 100) * 100, 0);
 
                 if ($config->stat == 2) {
-                    $sql = "SELECT DISTINCT s.*, u.id, u.username, u.ally_id, u.banaday, u.urlaubs_modus, u.onlinetime, a.ally_name, (a.ally_owner=u.id) as is_leader, a.ally_owner_range FROM %%USER_POINTS%% as s
+                    $sql = "SELECT DISTINCT s.*, u.id, u.username, u.ally_id, u.banaday, u.urlaubs_modus, u.onlinetime, u.authlevel, u.is_bot, a.ally_name, (a.ally_owner=u.id) as is_leader, a.ally_owner_range FROM %%USER_POINTS%% as s
 					INNER JOIN %%USERS%% as u ON u.id = s.id_owner
 					LEFT JOIN %%ALLIANCE%% as a ON a.id = s.id_ally
 					WHERE s.universe = :universe  AND u.authlevel < :authLevel
@@ -101,7 +101,7 @@ class ShowStatisticsPage extends AbstractGamePage
                     ));
                 } else {
 
-                    $sql = "SELECT DISTINCT s.*, u.id, u.username, u.ally_id, u.banaday, u.urlaubs_modus, u.onlinetime, a.ally_name, (a.ally_owner=u.id) as is_leader, a.ally_owner_range
+                    $sql = "SELECT DISTINCT s.*, u.id, u.username, u.ally_id, u.banaday, u.urlaubs_modus, u.onlinetime, u.authlevel, u.is_bot, a.ally_name, (a.ally_owner=u.id) as is_leader, a.ally_owner_range
                     FROM %%USER_POINTS%% as s
           					INNER JOIN %%USERS%% as u ON u.id = s.id_owner
           					LEFT JOIN %%ALLIANCE%% as a ON a.id = s.id_ally
