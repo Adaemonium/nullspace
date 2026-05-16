@@ -243,7 +243,7 @@ class FlyingFleetsTable
 				$EventString	= sprintf($Message, $FleetContent, $this->BuildHostileFleetPlayerLink($fleetRow), $StartType, $fleetRow['own_planetname'], GetStartAddressLink($fleetRow, $FleetType), $TargetType, $fleetRow['target_planetname'], GetTargetAddressLink($fleetRow, $FleetType), $FleetCapacity);
 			}
 		}
-		$EventString = '<span class="'.$FleetStatus[$Status].' '.$FleetType.'">'.$EventString.'</span>';
+		$EventString = '<span class="'.$FleetStatus[$Status].' '.$FleetType.'"><span class="fs-10 text-muted">[' . $fleetRow['fleet_id'] . ']</span> '.$EventString.'</span>';
 
 		if ($Status == FLEET_OUTWARD)
 			$Time = $fleetRow['fleet_start_time'];
