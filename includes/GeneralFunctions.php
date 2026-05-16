@@ -59,6 +59,10 @@ function userStatus($data, $noobprotection = false)
 {
 	$Array = array();
 
+	if (!empty($data['is_bot']) || (isset($data['authlevel']) && $data['authlevel'] >= 1)) {
+		return $Array;
+	}
+
 	if (isset($data['banaday']) && $data['banaday'] > TIMESTAMP) {
 		$Array[] = 'banned';
 	}
@@ -316,6 +320,11 @@ function makebr($text)
 function CheckNoobProtec($OwnerPlayer, $TargetPlayer, $Player)
 {
 	$config	= Config::get();
+
+	if (!empty($Player['is_bot']) || (isset($Player['authlevel']) && $Player['authlevel'] >= 1)) {
+		return array('NoobPlayer' => false, 'StrongPlayer' => false);
+	}
+
 	if (
 		$config->noobprotection == 0
 		|| $config->noobprotectiontime == 0
