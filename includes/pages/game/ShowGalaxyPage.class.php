@@ -128,6 +128,7 @@ class ShowGalaxyPage extends AbstractGamePage
 				'enemy'						=> $LNG['gl_short_enemy'],
 				'friend'					=> $LNG['gl_short_friend'],
 				'member'					=> $LNG['gl_short_member'],
+				'bot'						=> $LNG['gl_short_bot'],
 			),
       'userAuthLevel' => $USER['authlevel'],
 		));
