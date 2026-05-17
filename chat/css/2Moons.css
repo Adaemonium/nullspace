@@ -184,4 +184,10 @@
 	#content #onlineListContainer {
 	display: none !important;
 	}
+	#content {
+	width: 100% !important;
+	}
+	#content #chatList {
+	right: 0 !important;
+	}
 }
