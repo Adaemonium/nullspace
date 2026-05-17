@@ -42,6 +42,9 @@
     .table[style*="table-layout: fixed"] {
       table-layout: auto !important;
     }
+    #content #onlineListContainer {
+    display: none;
+    }
     .fs-12{
       font-size: 12px!important;
     }
