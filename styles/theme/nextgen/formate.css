@@ -444,40 +444,28 @@ table{
 	text-decoration:line-through
 }
 
-.ownattack {
-	color:#6c3
+.ownattack,.owndestroy,.ownfederation,.ownmissile {
+	color:#fe5c00
 }
 
-.owncolony {
-	color:#c1c1c1
+.owncolony,.colony {
+	color:#1100d5
 }
 
-.owndeploy {
-	color:#666
+.owndeploy,.deploy {
+	color:#0bce00
 }
 
-.owndestroy {
-	color:#ff9
+.ownharvest,.harvest {
+	color:#00a6a9
 }
 
-.ownfederation {
-	color:#c66
+.ownhold,.hold {
+	color:#fecf00
 }
 
-.ownharvest {
-	color:#ceff68
-}
-
-.ownhold {
-	color:#80a0c0
-}
-
-.destroy {
-	color:#d4a017
-}
-
-.hold {
-	color:#39c
+.destroy,.missile {
+	color:#fe0000
 }
 
 .warning {
@@ -489,23 +477,23 @@ table{
 }
 
 .return {
-	color:#444
+	color:#ffffff
 }
 
-.allymember,.colony,.deploy,.harvest,.transport,.success {
+.allymember,.success {
 	color:lime
 }
 
-.owntransport {
-	color:#a0ffa0
+.owntransport,.transport {
+	color:#a6fe00
 }
 
-.ownespionage,.ownmissile {
-	color:#fc6
+.ownespionage {
+	color:#fefc00
 }
 
-.espionage,.missile {
-	color:#f60
+.espionage {
+	color:#fe8d00
 }
 
 .build_submit {
