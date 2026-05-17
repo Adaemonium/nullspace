@@ -14,3 +14,9 @@ ajaxChat.replaceCustomCommands = function(text, textParts) {
 	return text;
 }
  */
+
+ajaxChat.replaceCustomText = function(text) {
+	text=text.replace(/fuck/gi, '****');
+	text=text.replace(/shit/gi, '****');
+	return text;
+}
