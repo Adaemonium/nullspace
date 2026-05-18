@@ -111,9 +111,17 @@ class Universe {
 					$universe = (int) $_REQUEST['uni'];
 				}
 			}
-			elseif(MODE == 'ADMIN' && isset($_SESSION['admin_uni']))
+			elseif(MODE == 'ADMIN')
 			{
-				$universe = (int) $_SESSION['admin_uni'];
+				$session = Session::load();
+				if(isset($session->emulatedUniverse) && self::exists($session->emulatedUniverse))
+				{
+					$universe = (int) $session->emulatedUniverse;
+				}
+				elseif(isset($_SESSION['admin_uni']))
+				{
+					$universe = (int) $_SESSION['admin_uni'];
+				}
 			}
 
 
