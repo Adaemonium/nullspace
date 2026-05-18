@@ -65,6 +65,47 @@
 			</tr>
 			{/foreach}
 			<tr>
+				<th colspan="{$colspan}">Capacity</th>
+			</tr>
+			<tr>
+				<td>Total Resources</td>
+				<td>{array_sum($planetList.capacity.total_resources)|number}</td>
+				{foreach $planetList.capacity.total_resources as $val}
+					<td>{$val|number}</td>
+				{/foreach}
+			</tr>
+			<tr>
+				<td>Cargo Capacity</td>
+				<td>{array_sum($planetList.capacity.cargo)|number}</td>
+				{foreach $planetList.capacity.cargo as $val}
+					<td>{$val|number}</td>
+				{/foreach}
+			</tr>
+			<tr>
+				<td>Difference</td>
+				<td>{math equation="a - b" a=array_sum($planetList.capacity.cargo) b=array_sum($planetList.capacity.total_resources)}</td>
+				{foreach $planetList.capacity.difference as $val}
+					<td style="color:{if $val >= 0}lime{else}red{/if}">{$val|number}</td>
+				{/foreach}
+			</tr>
+			<tr>
+				<th colspan="{$colspan}">Debris Field</th>
+			</tr>
+			<tr>
+				<td>Metal</td>
+				<td>{array_sum($planetList.debris.metal)|number}</td>
+				{foreach $planetList.debris.metal as $val}
+					<td>{$val|number}</td>
+				{/foreach}
+			</tr>
+			<tr>
+				<td>Crystal</td>
+				<td>{array_sum($planetList.debris.crystal)|number}</td>
+				{foreach $planetList.debris.crystal as $val}
+					<td>{$val|number}</td>
+				{/foreach}
+			</tr>
+			<tr>
 				<th class="text-center" colspan="{$colspan}">{$LNG.lv_buildings}</th>
 			</tr>
 			{foreach $planetList.build as $elementID => $buildArray}

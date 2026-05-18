@@ -29,7 +29,7 @@ class ShowImperiumPage extends AbstractGamePage
 
 	function show()
 	{
-		global $USER, $PLANET, $resource, $reslist;
+		global $USER, $PLANET, $resource, $reslist, $pricelist;
 
         $db = Database::get();
 
@@ -119,6 +119,24 @@ class ShowImperiumPage extends AbstractGamePage
 
 			$planetList['missiles'][502][$Planet['id']]         = $Planet[$resource[502]];
             		$planetList['missiles'][503][$Planet['id']]         = $Planet[$resource[503]];
+
+			$totalRes = $Planet['metal'] + $Planet['crystal'] + $Planet['deuterium'];
+			$planetList['capacity']['total_resources'][$Planet['id']] = $totalRes;
+
+			$cargoCapacity = 0;
+			foreach($reslist['fleet'] as $ShipID) {
+				if($ShipID == 212) continue; // skip solar satellite
+				$shipCount = $Planet[$resource[$ShipID]] ?? 0;
+				if($shipCount > 0 && isset($pricelist[$ShipID]['capacity'])) {
+					$cargoCapacity += $pricelist[$ShipID]['capacity'] * $shipCount;
+				}
+			}
+
+			$cargoCapacity *= 1 + $USER['factor']['ShipStorage'];
+			$planetList['capacity']['cargo'][$Planet['id']]      = $cargoCapacity;
+			$planetList['capacity']['difference'][$Planet['id']] = $cargoCapacity - $totalRes;
+			$planetList['debris']['metal'][$Planet['id']]   = ($Planet['planet_type'] == 1) ? ($Planet['der_metal']   ?? 0) : 0;
+			$planetList['debris']['crystal'][$Planet['id']] = ($Planet['planet_type'] == 1) ? ($Planet['der_crystal'] ?? 0) : 0;
 		}
 
 		foreach($reslist['tech'] as $elementID){
