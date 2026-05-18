@@ -216,6 +216,25 @@ input[type="radio"] {
 .button-upgrade:hover{
 	background-color: #6ac144;
 }
+.button-jump{
+	width: 80px;
+	height: 28px;
+	font-weight: 700;
+	font-size: 11px;
+	color: #fff;
+	background-color: #1a6aab;
+	transition: 0.3s ease;
+	border: 1px solid #2a7bc0;
+	border-radius: 5px;
+	overflow: hidden;
+	text-decoration: none;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+.button-jump:hover{
+	background-color: #2a85d4;
+}
 .color-white{
 	color: #fff!important;
 }

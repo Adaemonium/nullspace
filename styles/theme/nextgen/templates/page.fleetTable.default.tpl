@@ -175,7 +175,7 @@
 		<tr style="height:20px;">
 		<td class="text-center" colspan="4">
 			<input class="button-upgrade" type="submit" value="{$LNG.fl_continue}">
-			{if $hasJumpGate}&nbsp;<a href="#" onclick="return Dialog.info(43);" class="button-upgrade">{$LNG.bd_jump_gate_action}</a>{/if}
+			{if $hasJumpGate}&nbsp;<a href="#" onclick="return Dialog.info(43);" class="button-jump">{$LNG.bd_jump_gate_action}</a>{/if}
 		</td>
 		{/if}
 	</tbody>
