@@ -293,6 +293,7 @@ class ShowFleetTablePage extends AbstractGamePage
 			'bonusCombustion'		=> $USER[$resource[115]] * 10,
 			'bonusImpulse'			=> $USER[$resource[117]] * 20,
 			'bonusHyperspace'		=> $USER[$resource[118]] * 30,
+			'hasJumpGate'			=> ($PLANET['planet_type'] == 3 && $PLANET[$resource[43]] > 0),
 		));
 
 		$this->display('page.fleetTable.default.tpl');
