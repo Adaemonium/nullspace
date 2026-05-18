@@ -143,9 +143,12 @@ class ShowImperiumPage extends AbstractGamePage
 			$planetList['tech'][$elementID]	= $USER[$resource[$elementID]];
 		}
 
+		$totalDiff = array_sum($planetList['capacity']['cargo']) - array_sum($planetList['capacity']['total_resources']);
+
 		$this->assign(array(
 			'colspan'		=> count($PLANETS) + 2,
-			'planetList'	=> $planetList,
+							'planetList'	=> $planetList,
+							'totalDiff'		=> $totalDiff,
 		));
 
 		$this->display('page.empire.default.tpl');
