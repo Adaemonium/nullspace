@@ -221,13 +221,13 @@ input[type="radio"] {
 	height: 28px;
 	font-weight: 700;
 	font-size: 11px;
-	color: #fff;
+	color: #fff !important;
 	background-color: #1a6aab;
 	transition: 0.3s ease;
 	border: 2px solid #2a85d4;
 	border-radius: 5px;
 	overflow: hidden;
-	text-decoration: none;
+	text-decoration: none !important;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
