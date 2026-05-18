@@ -83,7 +83,8 @@
 			</tr>
 			<tr>
 				<td>Difference</td>
-				<td>{math equation="a - b" a=array_sum($planetList.capacity.cargo) b=array_sum($planetList.capacity.total_resources)}</td>
+				{math equation="a - b" a=array_sum($planetList.capacity.cargo) b=array_sum($planetList.capacity.total_resources) assign="totalDiff"}
+				<td style="color:{if $totalDiff >= 0}lime{else}red{/if}">{$totalDiff|number}</td>
 				{foreach $planetList.capacity.difference as $val}
 					<td style="color:{if $val >= 0}lime{else}red{/if}">{$val|number}</td>
 				{/foreach}
