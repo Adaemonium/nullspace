@@ -332,7 +332,7 @@ class Session
 
 		if(!empty($httpData))
 		{
-			$sql	= 'SELECT id FROM %%PLANETS%% WHERE id = :planetId AND id_owner = :userId;';
+			$sql	= 'SELECT id FROM %%PLANETS%% WHERE id = :planetId AND id_owner = :userId AND universe = (SELECT universe FROM %%USERS%% WHERE id = :userId);';
 
 			$db	= Database::get();
 			$planetId	= $db->selectSingle($sql, array(

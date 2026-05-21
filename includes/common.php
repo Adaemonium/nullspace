@@ -204,16 +204,18 @@ if (MODE === 'INGAME' || MODE === 'ADMIN' || MODE === 'CRON')
 
 		$session->selectActivePlanet();
 
-		$sql	= "SELECT * FROM %%PLANETS%% WHERE id = :planetId;";
+		$sql	= "SELECT * FROM %%PLANETS%% WHERE id = :planetId AND universe = :universe;";
 		$PLANET	= $db->selectSingle($sql, array(
 			':planetId'	=> $session->planetId,
+			':universe' => $USER['universe'],
 		));
 
 		if(empty($PLANET))
 		{
-			$sql	= "SELECT * FROM %%PLANETS%% WHERE id = :planetId;";
+			$sql	= "SELECT * FROM %%PLANETS%% WHERE id = :planetId AND universe = :universe;";
 			$PLANET	= $db->selectSingle($sql, array(
 				':planetId'	=> $USER['id_planet'],
+				':universe' => $USER['universe'],
 			));
 
 			if(empty($PLANET))
