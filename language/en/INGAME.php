@@ -30,7 +30,7 @@ $LNG['rl_error_type_2'] ="Relocation should be started from the planet";
 $LNG['rl_error_type_3'] ="The position is not free";
 $LNG['rl_error_type_4'] ="Wrong position !";
 $LNG['rl_error_type_5'] ="You cannot move planet if there is a building in construction !";
-$LNG['rl_error_type_6'] ="You cannot move planet if there is research started on the planet !";
+$LNG['rl_error_type_6'] ="You cannot move planet if there is research undergoing on the planet !";
 $LNG['rl_error_type_7'] ="There is fleet movement from this planet, you cannot relocate !";
 $LNG['rl_error_type_8'] ="A planet can be moved only once every %s hours";
 $LNG['rl_error_type_9'] = "You cannot move the planet if there is ongoing construction in shipyard !";
@@ -959,7 +959,7 @@ $LNG['op_cant_activate_vacation_mode']		= 'You cannot activate vacation mode wit
 $LNG['op_password_changed']					= 'Password changed';
 $LNG['op_username_changed']					= 'Username changed';
 $LNG['op_options_changed']					= 'Options changed';
-$LNG['op_vacation_mode_active_message']		= 'Vacation mode is active and will end up in: ';
+$LNG['op_vacation_mode_active_message']		= 'Vacation mode is active and will end on: ';
 $LNG['op_end_vacation_mode']				= 'End period of vacation';
 $LNG['op_save_changes']						= 'Save changes';
 $LNG['op_admin_title_options']				= 'Administrative Options';
@@ -1020,8 +1020,8 @@ $LNG['op_dst_mode_sel'][2]					= 'Automatic';
 $LNG['op_timezone']							= 'Time zone';
 $LNG['op_block_pm']							= 'Block private messages';
 
-$LNG['multiUniverse']                       = 'Multi Universe';
-$LNG['multiUniverseDescription']             = 'You can start in a new universe. The universes are independent of each other. You can play in all universes with the same account.';
+$LNG['multiUniverse']                       = 'Multiverse';
+$LNG['multiUniverseDescription']             = 'You are playing in a multiverse.';
 $LNG['startInMultiUniverse']                 = 'Start in ';
 
 //----------------------------------------------------------------------------//
