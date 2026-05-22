@@ -1021,7 +1021,7 @@ $LNG['op_timezone']							= 'Time zone';
 $LNG['op_block_pm']							= 'Block private messages';
 
 $LNG['multiUniverse']                       = 'Multiverse';
-$LNG['multiUniverseDescription']             = 'You are playing in a multiverse.';
+$LNG['multiUniverseDescription']             = 'You are playing one of multiple universes.';
 $LNG['startInMultiUniverse']                 = 'Start in ';
 
 //----------------------------------------------------------------------------//
