@@ -565,7 +565,7 @@ function exceptionHandler($exception)
 	<link rel="stylesheet" type="text/css" href="' . $DIR . '/styles/resource/css/ingame/main.css?v=' . $VERSION . '">
 	<link rel="stylesheet" type="text/css" href="' . $DIR . '/styles/resource/css/base/jquery.css?v=' . $VERSION . '">
 	<link rel="stylesheet" type="text/css" href="' . $DIR . '/styles/theme/gow/formate.css?v=' . $VERSION . '">
-	<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<script type="text/javascript">
 	var ServerTimezoneOffset = -3600;
 	var serverTime 	= new Date(2012, 2, 12, 14, 43, 36);
