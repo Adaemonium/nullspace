@@ -41,11 +41,11 @@
 	<link rel="stylesheet" href="styles/theme/nextgen/css/style.css">
 	<link rel="stylesheet" href="styles/theme/nextgen/css/mobile.css">
 	<!-- Favicons  -->
-	<link rel="shortcut icon" href="/styles/resource/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" sizes="180x180" href="/styles/resource/favicon/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/styles/resource/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/styles/resource/favicon/favicon-16x16.png">
-	<link rel="manifest" href="/styles/resource/favicon/site.webmanifest">
+	<link rel="shortcut icon" href="styles/resource/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="styles/resource/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="styles/resource/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="styles/resource/favicon/favicon-16x16.png">
+	<link rel="manifest" href="styles/resource/favicon/site.webmanifest">
 
 	<script type="text/javascript">
 	var ServerTimezoneOffset = {$Offset};
