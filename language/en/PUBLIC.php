@@ -67,7 +67,7 @@ $LNG['loginPassword']				= 'Password';
 $LNG['loginButton']					= 'Login';
 $LNG['loginInfo']					= 'With the login I accept the %s.';
 $LNG['loginWelcome']				= 'Welcome to %s';
-$LNG['loginServerDesc']				= '%s is a text-based space strategy game. Conquer planets, build your fleet, and fight against other players. <br><b>OpenSource and Free2Play!</b>';
+$LNG['loginServerDesc']				= '%s is a browser-based space strategy game. Conquer planets, build your fleet, and fight against other players. <br><b>OpenSource and Free.</b>';
 
 // Register
 $LNG['registerFacebookAccount']		= 'Facebook Account';
@@ -114,7 +114,7 @@ $LNG['registerSendComplete']		= 'Thank you for the registration. You must check 
 
 $LNG['registerWelcomePMSenderName']	= 'Administrator';
 $LNG['registerWelcomePMSubject']	= 'Welcome';
-$LNG['registerWelcomePMText']		= "Welcome to %s. Universe of Glorious Space Battles. May you stand tall among the galaxy's finest* and conquer the stars.<br><br>If you're a beginner, please proceed to onboarding by clicking on the link on the bottom navbar. From there you will initiate brainwave information upload. We recommend you try not to scream too much.<br><br>For the experienced, we happily inform you that we supply a very 'standard' range of technologies and missions, delicious bots, dicey expeditions, and a multiverse.<br><br>Ensure you read the rules for the code of conduct in this game. ANd if you have any further questions or need support, please also feel free to join the in-game chat, join in on stoat, or if in dire trouble, open a support ticket.<br><br>Happy flying! - Adaemonium<br><br>(*'Finest' is defined loosely, please keep an open mind.)";
+$LNG['registerWelcomePMText']		= "Welcome to %s. Universe of Glorious Space Battles. May you stand tall among the galaxy's finest* and conquer the stars.<br><br>If you're a beginner, please proceed to onboarding by clicking on the link on the bottom navbar. From there you will initiate brainwave information upload. We recommend you try not to scream too much.<br><br>For the experienced, we happily inform you that we supply a very 'standard' range of technologies and missions, delicious bots, dicey expeditions, and a multiverse.<br><br>Ensure you read the rules for the code of conduct in this game. And if you have any further questions or need support, please also feel free to join the in-game chat, join in on stoat, or if in dire trouble, open a support ticket.<br><br>Happy flying! - Adaemonium<br><br>(*'Finest' is defined loosely, please keep an open mind.)";
 
 $LNG['registerSecretQuestionText'] = "Please select a secret question";
 $LNG['registerSecretQuestionAnswerText'] = "Answer to your secret question";

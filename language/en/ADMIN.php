@@ -135,7 +135,7 @@ $LNG['time_minutes'] = 'Minutes';
 $LNG['time_seconds'] = 'Seconds';
 //###########################################################//
 
-$LNG['info_information'] = 'Send or report bugs in the forum for <a href="%s" target="tracker">ultimateXnova</a><br>Otherwise there will be support!';
+$LNG['info_information'] = 'Send or report bugs in the forum for <a href="%s" target="tracker">NULLSPACE</a><br>Otherwise there will be support!';
 
 //---------------	Sim ou não	------------------------//
 $LNG['one_is_yes_1'] = 'Yes';
@@ -394,9 +394,9 @@ $LNG['ma_modes'] = array('Game', 'Mail', 'Game & Mail');
 //###########################################################//
 
 //---------------	Pagina Inicial	------------------------//
-$LNG['ow_title'] = 'Welcome to ultimateXnova!';
+$LNG['ow_title'] = 'Welcome to NULLSPACE!';
 $LNG['ow_donate'] = 'Donate';
-$LNG['ow_welcome_text'] = 'Welcome to popular ultimateXnova! (:';
+$LNG['ow_welcome_text'] = 'Welcome to popular NULLSPACE! (:';
 $LNG['ow_overview'] = 'Control';
 $LNG['ow_support'] = 'Support';
 $LNG['ow_credits'] = 'Credits';
