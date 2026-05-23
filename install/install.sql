@@ -1112,7 +1112,7 @@ CREATE TABLE `%PREFIX%vars_requriements` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 INSERT INTO `%PREFIX%config` (`uni`, `VERSION`, `uni_name`, `game_name`, `close_reason`, `OverviewNewsText`, `moduls`, `disclamerAddress`, `disclamerPhone`, `disclamerMail`, `disclamerNotice`) VALUES
-(1, '%VERSION%', '', 'ultimateXnova', '', '', '', '', '', '', '');
+(1, '%VERSION%', '', 'NULLSPACE', '', '', '', '', '', '', '');
 
 INSERT INTO `%PREFIX%colony_settings` (`metal_start`) VALUES (500);
 
