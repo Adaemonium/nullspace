@@ -357,6 +357,7 @@ abstract class AbstractGamePage
 
 			}
 			unset($currentPlanet);
+			$fleets = $this->GetFleets();
 		}
 
 		// MultiUniverse Support
@@ -401,7 +402,7 @@ abstract class AbstractGamePage
 			'mode' => HTTP::_GP('mode',''),
 			'servertime' => _date("M D d H:i:s", TIMESTAMP, $USER['timezone']),
 			'AllPlanets'				=> $AllPlanets,
-			'fleets'					=> $this->GetFleets(),
+			'fleets' => $fleets,
 			'show_fleets_active' => $USER['show_fleets_active'],
 			'attackListenTime' => ATTACK_LISTEN_TIME,
 		));
