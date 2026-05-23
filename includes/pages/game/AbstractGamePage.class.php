@@ -282,6 +282,7 @@ abstract class AbstractGamePage
 		}
 
 		$AllPlanets = $AllMoons = array();
+		$fleets = array();
 		if($this->getWindow() === 'full' || isset($USER['PLANETS'])) {
 			foreach($USER['PLANETS'] as $ID => $CPLANET)
 			{
