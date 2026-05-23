@@ -282,81 +282,82 @@ abstract class AbstractGamePage
 		}
 
 		$AllPlanets = $AllMoons = array();
-		foreach($USER['PLANETS'] as $ID => $CPLANET)
-		{
-
-			if (!empty($CPLANET['b_building']) && $CPLANET['b_building'] > TIMESTAMP) {
-				$Queue = unserialize($CPLANET['b_building_id']);
-				$BuildPlanet = $LNG['tech'][$Queue[0][0]]." (".$Queue[0][1].")<br><span style=\"color:#7F7F7F;\">(".pretty_time($Queue[0][3] - TIMESTAMP).")</span>";
-			} else {
-				$BuildPlanet = $LNG['ov_free'];
-			}
-
-			if ($CPLANET['planet_type'] == 3) {
-
-				$AllMoons[] = array(
-					'id'	=> $CPLANET['id'],
-					'name'	=> (strlen($CPLANET['name']) >= 12) ? substr($CPLANET['name'],0,12) . ".." : $CPLANET['name'],
-					'image'	=> $CPLANET['image'],
-					'build'	=> $BuildPlanet,
-					'galaxy' => $CPLANET['galaxy'],
-					'system' => $CPLANET['system'],
-					'planet' => $CPLANET['planet'],
-					'selected' => ($CPLANET['id'] == $PLANET['id']) ? true : false,
-					'field_current' => $CPLANET['field_current'],
-					'field_max' => $CPLANET['field_max'],
-					'diameter' => pretty_number($CPLANET['diameter']) . " km",
-					'temp_min' => $CPLANET['temp_min'] . " °C",
-					'temp_max' => $CPLANET['temp_max'] . " °C",
-				);
-
-			}else {
-
-				$AllPlanets[] = array(
-					'id'	=> $CPLANET['id'],
-					'name'	=> (strlen($CPLANET['name']) >= 12) ? substr($CPLANET['name'],0,12) . ".." : $CPLANET['name'],
-					'image'	=> $CPLANET['image'],
-					'build'	=> $BuildPlanet,
-					'galaxy' => $CPLANET['galaxy'],
-					'system' => $CPLANET['system'],
-					'planet' => $CPLANET['planet'],
-					'selected' => ($CPLANET['id'] == $PLANET['id']) ? true : false,
-					'field_current' => $CPLANET['field_current'],
-					'field_max' => $CPLANET['field_max'],
-					'diameter' => pretty_number($CPLANET['diameter']) . " km",
-					'temp_min' => $CPLANET['temp_min'] . " °C",
-					'temp_max' => $CPLANET['temp_max'] . " °C",
-					'id_luna' => $CPLANET['id_luna'],
-				);
-
-			}
-
-
-
-		}
-
-		// NOTE: add moon array inside planet array
-
-		foreach ($AllPlanets as $key => &$currentPlanet) {
-
-			if ($currentPlanet['id_luna'] == 0)
+		if($this->getWindow() === 'full' || isset($USER['PLANETS'])) {
+			foreach($USER['PLANETS'] as $ID => $CPLANET)
 			{
-				continue;
+
+				if (!empty($CPLANET['b_building']) && $CPLANET['b_building'] > TIMESTAMP) {
+					$Queue = unserialize($CPLANET['b_building_id']);
+					$BuildPlanet = $LNG['tech'][$Queue[0][0]]." (".$Queue[0][1].")<br><span style=\"color:#7F7F7F;\">(".pretty_time($Queue[0][3] - TIMESTAMP).")</span>";
+				} else {
+					$BuildPlanet = $LNG['ov_free'];
+				}
+
+				if ($CPLANET['planet_type'] == 3) {
+
+					$AllMoons[] = array(
+						'id'	=> $CPLANET['id'],
+						'name'	=> (strlen($CPLANET['name']) >= 12) ? substr($CPLANET['name'],0,12) . ".." : $CPLANET['name'],
+						'image'	=> $CPLANET['image'],
+						'build'	=> $BuildPlanet,
+						'galaxy' => $CPLANET['galaxy'],
+						'system' => $CPLANET['system'],
+						'planet' => $CPLANET['planet'],
+						'selected' => ($CPLANET['id'] == $PLANET['id']) ? true : false,
+						'field_current' => $CPLANET['field_current'],
+						'field_max' => $CPLANET['field_max'],
+						'diameter' => pretty_number($CPLANET['diameter']) . " km",
+						'temp_min' => $CPLANET['temp_min'] . " °C",
+						'temp_max' => $CPLANET['temp_max'] . " °C",
+					);
+
+				}else {
+
+					$AllPlanets[] = array(
+						'id'	=> $CPLANET['id'],
+						'name'	=> (strlen($CPLANET['name']) >= 12) ? substr($CPLANET['name'],0,12) . ".." : $CPLANET['name'],
+						'image'	=> $CPLANET['image'],
+						'build'	=> $BuildPlanet,
+						'galaxy' => $CPLANET['galaxy'],
+						'system' => $CPLANET['system'],
+						'planet' => $CPLANET['planet'],
+						'selected' => ($CPLANET['id'] == $PLANET['id']) ? true : false,
+						'field_current' => $CPLANET['field_current'],
+						'field_max' => $CPLANET['field_max'],
+						'diameter' => pretty_number($CPLANET['diameter']) . " km",
+						'temp_min' => $CPLANET['temp_min'] . " °C",
+						'temp_max' => $CPLANET['temp_max'] . " °C",
+						'id_luna' => $CPLANET['id_luna'],
+					);
+
+				}
+
+
+
 			}
 
-			foreach ($AllMoons as $moon_key => $currentMoon) {
+			// NOTE: add moon array inside planet array
 
-				if ($currentMoon['id'] == $currentPlanet['id_luna'])
+			foreach ($AllPlanets as $key => &$currentPlanet) {
+
+				if ($currentPlanet['id_luna'] == 0)
 				{
-					$currentPlanet['moonInfo'][] = $currentMoon;
 					continue;
 				}
 
+				foreach ($AllMoons as $moon_key => $currentMoon) {
+
+					if ($currentMoon['id'] == $currentPlanet['id_luna'])
+					{
+						$currentPlanet['moonInfo'][] = $currentMoon;
+						continue;
+					}
+
+				}
+
 			}
-
+			unset($currentPlanet);
 		}
-		unset($currentPlanet);
-
 
 		// MultiUniverse Support
 		// Get all available user ids, that the current user can access
@@ -368,7 +369,7 @@ abstract class AbstractGamePage
 			if($child['id'] != $USER['id'])
 			{
 				$mu_unis[$child['universe']] = Universe::getName($child['universe']);
-				
+
 			}
 		}
 		
