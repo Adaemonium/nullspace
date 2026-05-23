@@ -175,7 +175,7 @@ abstract class AbstractGamePage
 			echo 'You received a Ban. If you think this is a mistake, contact us via email'; die();
 		}
 
-		if(isset($USER['PLANETS'])) {
+		if(!isset($USER['PLANETS'])) {
 			$USER['PLANETS']	= getPlanets($USER);
 		}
 
