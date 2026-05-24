@@ -261,18 +261,6 @@ if (MODE === 'INGAME' || MODE === 'ADMIN' || MODE === 'CRON')
 				$session->planetId = $USER['id_planet'];
 			}
 		}
-
-		$USER['factor']		= getFactors($USER);
-		$USER['PLANETS']	= getPlanets($USER);
-	}
-	elseif (MODE === 'ADMIN')
-	{
-		error_reporting(E_ERROR | E_WARNING | E_PARSE);
-		$USER['rights']		= unserialize($USER['rights']);
-		$LNG->includeData(array('ADMIN', 'CUSTOM'));
-	}
-}
-
 		$USER['factor']		= getFactors($USER);
 		$USER['PLANETS']	= getPlanets($USER);
 	}
