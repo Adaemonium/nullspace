@@ -745,7 +745,7 @@ class ShowAccountsPage extends AbstractAdminPage
 
 		$db = Database::get();
 
-		$sql = "SELECT `username`,`email`,`email_2`,`password`,`urlaubs_modus`,`urlaubs_until`
+		$sql = "SELECT `username`,`email`,`email_2`,`password`,`urlaubs_modus`,`urlaubs_until`,`universe`
 		FROM %%USERS%% WHERE `id` = :userId;";
 
 		$userInfo = $db->selectSingle($sql,array(
