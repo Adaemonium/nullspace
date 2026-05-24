@@ -787,23 +787,34 @@ class ShowAccountsPage extends AbstractAdminPage
 		if ($vacation == 'yes') {
 			$Answer		= 1;
 			$after['urlaubs_modus'] = 1;
-			$TimeAns    = TIMESTAMP + $_POST['d'] * 86400 + $_POST['h'] * 3600 + $_POST['m'] * 60 + $_POST['s'];
+			$TimeAns = TIMESTAMP + (int)$_POST['d'] * 86400 + (int)$_POST['h'] * 3600 + (int)$_POST['m'] * 60 + (int)$_POST['s'];
 			$after['urlaubs_until'] = $TimeAns;
 		}
 
 		$PersonalQuery    .=  "`urlaubs_modus` = :Answer, `urlaubs_until` = :TimeAns ";
 		$PersonalQuery    .= "WHERE `id` = :id AND `universe` = :universe";
 
-		$db->update($PersonalQuery,array(
-			':username' => $username,
-			':email' => $email,
-			':email_2' => $email_2,
-			':password' => PlayerUtil::cryptPassword($password),
-			':Answer' => $Answer,
-			':TimeAns' => $TimeAns,
-			':id' => $id,
+		$params = array(
+			':Answer'   => $Answer,
+			':TimeAns'  => $TimeAns,
+			':id'       => $id,
 			':universe' => Universe::getEmulated()
-		));
+		);
+
+		if(!empty($username) && $id != ROOT_USER) {
+			$params[':username'] = $username;
+		}
+		if(!empty($email) && $id != ROOT_USER) {
+			$params[':email'] = $email;
+		}
+		if(!empty($email_2) && $id != ROOT_USER) {
+			$params[':email_2'] = $email_2;
+		}
+		if(!empty($password) && $id != ROOT_USER) {
+			$params[':password'] = PlayerUtil::cryptPassword($password);
+		}
+
+		$db->update($PersonalQuery, $params);
 
 		$LOG = new Log(1);
 		$LOG->target = $id;
