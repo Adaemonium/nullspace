@@ -155,7 +155,7 @@
 				<a class="hover-underline hover-pointer" href="javascript:maxShip('ship{$FleetRow.id}');">{$LNG.fl_max}</a>
 			</td>
 			<td>
-				<input class="form-control bg-dark text-white text-center p-0 my-0 mx-auto w-50 fs-12" name="ship{$FleetRow.id}" id="ship{$FleetRow.id}_input" size="10" value="0">
+				<input class="form-control bg-dark text-white text-center p-0 my-0 mx-auto w-50 fs-12" name="ship{$FleetRow.id}" id="ship{$FleetRow.id}_input" size="10" value="">
 			</td>
 			{else}
 			<td>&nbsp;</td>
