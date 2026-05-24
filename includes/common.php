@@ -215,18 +215,63 @@ if (MODE === 'INGAME' || MODE === 'ADMIN' || MODE === 'CRON')
 			$sql	= "SELECT * FROM %%PLANETS%% WHERE id = :planetId AND universe = :universe;";
 			$PLANET	= $db->selectSingle($sql, array(
 				':planetId'	=> $USER['id_planet'],
-				':universe' => $USER['universe'],
+				':universe'	=> $USER['universe'],
 			));
 
 			if(empty($PLANET))
 			{
-				throw new Exception("Main Planet does not exist!");
+				if($USER['id_planet'] == 0)
+				{
+					$universe	= Universe::current();
+					$config		= Config::get($universe);
+
+					$galaxy		= $config->LastSettedGalaxyPos;
+					$system		= $config->LastSettedSystemPos;
+					$position	= mt_rand(
+						round($config->max_planets * 0.2),
+										  round($config->max_planets * 0.8)
+					);
+
+					$planetId	= PlayerUtil::createPlanet(
+						$galaxy, $system, $position,
+						$universe, $USER['id'], NULL, true, $USER['authlevel']
+					);
+
+					$db->update(
+						"UPDATE %%USERS%% SET galaxy = :galaxy, system = :system, planet = :position, id_planet = :planetId WHERE id = :userId;",
+				 array(
+					 ':galaxy'	=> $galaxy,
+		   ':system'	=> $system,
+		   ':position'	=> $position,
+		   ':planetId'	=> $planetId,
+		   ':userId'	=> $USER['id'],
+				 )
+					);
+
+					HTTP::redirectTo('game.php?page=overview');
+					exit;
+				}
+				else
+				{
+					throw new Exception("Main Planet does not exist!");
+				}
 			}
 			else
 			{
 				$session->planetId = $USER['id_planet'];
 			}
 		}
+
+		$USER['factor']		= getFactors($USER);
+		$USER['PLANETS']	= getPlanets($USER);
+	}
+	elseif (MODE === 'ADMIN')
+	{
+		error_reporting(E_ERROR | E_WARNING | E_PARSE);
+		$USER['rights']		= unserialize($USER['rights']);
+		$LNG->includeData(array('ADMIN', 'CUSTOM'));
+	}
+}
 
 		$USER['factor']		= getFactors($USER);
 		$USER['PLANETS']	= getPlanets($USER);
