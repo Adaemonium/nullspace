@@ -153,7 +153,11 @@ function get_timezone_selector()
 	$timezone_identifiers = DateTimeZone::listIdentifiers();
 
 	foreach ($timezone_identifiers as $value) {
-		if (preg_match('/^(America|Antartica|Arctic|Asia|Atlantic|Europe|Indian|Pacific)\//', $value)) {
+		if ($value === 'UTC') {
+			$timezones['UTC']['UTC'] = 'UTC';
+			continue;
+		}
+		if (preg_match('/^(Africa|America|Antarctica|Arctic|Asia|Atlantic|Australia|Europe|Indian|Pacific)\//', $value)) {
 			$ex		= explode('/', $value); //obtain continent,city
 			$city	= isset($ex[2]) ? $ex[1] . ' - ' . $ex[2] : $ex[1]; //in case a timezone has more than one
 			$timezones[$ex[0]][$value] = str_replace('_', ' ', $city);
