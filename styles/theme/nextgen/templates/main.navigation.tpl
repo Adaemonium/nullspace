@@ -77,7 +77,7 @@
       {/if}
       {if $commit != ''}
       <li>
-        <a href="https://github.com/ultimateXnova/ultimateXnova/commit/{$commit}"  class="" target="copy">ultimateXnova {$commitShort}</a>
+        <a href="https://github.com/Adaemonium/nullspace/commit/{$commit}"  class="" target="copy">NULLSPACE {$commitShort}</a>
       </li>
       {/if}
   </ul>
