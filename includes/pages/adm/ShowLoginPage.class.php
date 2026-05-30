@@ -59,9 +59,29 @@ class ShowLoginPage extends AbstractAdminPage
 
 	}
 
+	function rateLimit($ip, $maxAttempts = 5, $windowSeconds = 60) {
+		$file = sys_get_temp_dir() . '/rl_' . md5($ip) . '.json';
+		$now = time();
+
+		$data = file_exists($file) ? json_decode(file_get_contents($file), true) : ['count' => 0, 'start' => $now];
+
+		if ($now - $data['start'] > $windowSeconds) {
+			$data = ['count' => 0, 'start' => $now];
+		}
+
+		$data['count']++;
+		file_put_contents($file, json_encode($data));
+
+		if ($data['count'] > $maxAttempts) {
+			http_response_code(429);
+			die(json_encode(['error' => 'Too many attempts. Try again later.']));
+		}
+	}
+
 
 	function validate(){
 		global $USER, $LNG, $config;
+		$this->rateLimit($_SERVER['REMOTE_ADDR']);
 
 		$error = array();
 
