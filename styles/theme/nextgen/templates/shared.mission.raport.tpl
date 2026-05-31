@@ -144,7 +144,7 @@
 		</td>
 	</tr>
 </table>
-<br><br>
+<br>
 {/if}
 {/foreach}
 <table style="width:auto;" class="table table-gow table-sm fs-12">
