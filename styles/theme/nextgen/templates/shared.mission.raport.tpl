@@ -134,6 +134,7 @@
 		{/foreach}
 	</tr>
 </table>
+<br><br>
 {if !$RoundInfo@last}
 <table style="width:auto;" class="table table-gow table-sm fs-12">
 	<tr>
