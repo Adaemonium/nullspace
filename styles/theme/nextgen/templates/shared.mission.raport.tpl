@@ -18,6 +18,7 @@
 		</td>
 	</tr>
 </table>
+<br><br>
 {foreach $Raport.rounds as $Round => $RoundInfo}
 <table style="width:auto;" class="table table-gow table-sm fs-12">
 	<tr>
