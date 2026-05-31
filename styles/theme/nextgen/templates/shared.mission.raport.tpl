@@ -10,8 +10,14 @@
 </table>
 {/if}
 <div style="width:100%;text-align:center">
-{if $Raport.mode == 1}{$LNG.sys_destruc_title}{else}{$LNG.sys_attack_title}{/if}
-{$Raport.time}:<br><br>
+<table style="width:auto;" class="table table-gow table-sm fs-12">
+	<tr>
+		<td>
+			{if $Raport.mode == 1}{$LNG.sys_destruc_title}{else}{$LNG.sys_attack_title}{/if}
+			{$Raport.time}:<br><br>
+		</td>
+	</tr>
+</table>
 {foreach $Raport.rounds as $Round => $RoundInfo}
 <table style="width:auto;" class="table table-gow table-sm fs-12">
 	<tr>
@@ -142,7 +148,7 @@
 
 
 			{$LNG.sys_stealed_ressources} {foreach $Raport.steal as $elementID => $amount}{$amount|number} {$LNG.tech.$elementID}{if ($amount@index + 2) == count($Raport.steal)} {$LNG.sys_and} {elseif !$amount@last}, {/if}{/foreach}
-
+$LNG.
 
 			{elseif $Raport.result == "r"}
 			{$LNG.sys_defender_won}
