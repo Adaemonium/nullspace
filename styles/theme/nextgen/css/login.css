@@ -93,7 +93,7 @@ body {
 
 .register-container {
     max-width: 500px;
-    
+    padding-bottom: 80px;
     margin: 0 auto;
     margin-top: 5vh;
 }
